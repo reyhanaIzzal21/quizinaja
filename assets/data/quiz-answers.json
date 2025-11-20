@@ -40,5 +40,173 @@
         "C",
         "B",
         "A"
+    ],
+    "tenses-basic": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "B"
+    ],
+    "reading-comprehension": [
+        "C",
+        "A",
+        "D",
+        "A",
+        "B"
+    ],
+    "grammar-advanced": [
+        "D",
+        "A",
+        "D",
+        "C",
+        "C"
+    ],
+    "unggah-ungguh": [
+        "C",
+        "D",
+        "A",
+        "D",
+        "B"
+    ],
+    "tembang-macapat": [
+        "D",
+        "C",
+        "D",
+        "A",
+        "C"
+    ],
+    "aksara-jawa": [
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+    ],
+    "paribasan-bebasan": [
+        "B",
+        "A",
+        "B",
+        "A",
+        "A"
+    ],
+    "bilangan-bulat": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "A"
+    ],
+    "pecahan-desimal": [
+        "D",
+        "A",
+        "C",
+        "D",
+        "B"
+    ],
+    "persamaan-linear": [
+        "B",
+        "B",
+        "C",
+        "B",
+        "B"
+    ],
+    "bangun-datar": [
+        "D",
+        "D",
+        "C",
+        "D",
+        "D"
+    ],
+    "bangun-ruang": [
+        "B",
+        "B",
+        "A",
+        "A",
+        "A"
+    ],
+    "peluang-dasar": [
+        "C",
+        "B",
+        "D",
+        "A",
+        "D"
+    ],
+    "teks-persuasif": [
+        "C",
+        "B",
+        "A",
+        "B",
+        "D"
+    ],
+    "teks-eksplanasi": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "C"
+    ],
+    "puisi-dan-pantun": [
+        "B",
+        "B",
+        "B",
+        "D",
+        "C"
+    ],
+    "kata-dan-kalimat": [
+        "C",
+        "B",
+        "C",
+        "C",
+        "C"
+    ],
+    "ejaan-dan-tanda-baca": [
+        "A",
+        "C",
+        "B",
+        "A",
+        "B"
+    ],
+    "hukum-newton": [
+        "B",
+        "A",
+        "C",
+        "B",
+        "B"
+    ],
+    "suhu-dan-kalor": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+    ],
+    "listrik-statis": [
+        "C",
+        "B",
+        "C",
+        "B",
+        "B"
+    ],
+    "gelombang-bunyi": [
+        "C",
+        "A",
+        "B",
+        "C",
+        "B"
+    ],
+    "optik-cahaya": [
+        "B",
+        "B",
+        "C",
+        "A",
+        "A"
+    ],
+    "tekanan": [
+        "A",
+        "C",
+        "A",
+        "B",
+        "C"
     ]
 }

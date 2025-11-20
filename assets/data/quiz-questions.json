@@ -109,6 +109,318 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "bilangan-bulat",
+                    "title": "Quiz Bilangan Bulat",
+                    "description": "Soal tentang operasi bilangan bulat",
+                    "questions": [
+                        {
+                            "question": "Hasil dari -15 + 23 adalah?",
+                            "options": [
+                                "8",
+                                "-8",
+                                "38",
+                                "-38"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari -12 × 5 adalah?",
+                            "options": [
+                                "60",
+                                "-60",
+                                "17",
+                                "-17"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari 48 : (-6) adalah?",
+                            "options": [
+                                "8",
+                                "-8",
+                                "42",
+                                "-42"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari (-7) × (-9) adalah?",
+                            "options": [
+                                "-63",
+                                "63",
+                                "-16",
+                                "16"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari 25 - 40 + 15 adalah?",
+                            "options": [
+                                "0",
+                                "10",
+                                "-10",
+                                "80"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "pecahan-desimal",
+                    "title": "Quiz Pecahan dan Desimal",
+                    "description": "Soal tentang pecahan dan desimal",
+                    "questions": [
+                        {
+                            "question": "Hasil dari 2/3 + 1/6 adalah?",
+                            "options": [
+                                "3/6",
+                                "3/9",
+                                "1/2",
+                                "5/6"
+                            ]
+                        },
+                        {
+                            "question": "Bentuk persen dari 0,35 adalah?",
+                            "options": [
+                                "35%",
+                                "3,5%",
+                                "350%",
+                                "0,35%"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari 5/8 - 1/4 adalah?",
+                            "options": [
+                                "1/2",
+                                "4/8",
+                                "3/8",
+                                "1/4"
+                            ]
+                        },
+                        {
+                            "question": "Bentuk pecahan dari 60% adalah?",
+                            "options": [
+                                "6/100",
+                                "60/10",
+                                "6/10",
+                                "3/5"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari 1,5 × 4 adalah?",
+                            "options": [
+                                "5",
+                                "6",
+                                "5,5",
+                                "6,5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "persamaan-linear",
+                    "title": "Quiz Persamaan Linear",
+                    "description": "Soal tentang persamaan linear satu variabel",
+                    "questions": [
+                        {
+                            "question": "Jika 4x + 8 = 28, maka nilai x adalah?",
+                            "options": [
+                                "3",
+                                "5",
+                                "7",
+                                "9"
+                            ]
+                        },
+                        {
+                            "question": "Penyelesaian dari 7y - 3 = 25 adalah?",
+                            "options": [
+                                "y = 2",
+                                "y = 4",
+                                "y = 6",
+                                "y = 8"
+                            ]
+                        },
+                        {
+                            "question": "Jika 3(x - 2) = 18, maka nilai x adalah?",
+                            "options": [
+                                "4",
+                                "6",
+                                "8",
+                                "10"
+                            ]
+                        },
+                        {
+                            "question": "Nilai a dari persamaan 2a + 5 = 3a - 7 adalah?",
+                            "options": [
+                                "10",
+                                "12",
+                                "14",
+                                "16"
+                            ]
+                        },
+                        {
+                            "question": "Jika 5x/2 = 15, maka nilai x adalah?",
+                            "options": [
+                                "3",
+                                "6",
+                                "9",
+                                "12"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bangun-datar",
+                    "title": "Quiz Bangun Datar",
+                    "description": "Soal tentang luas dan keliling bangun datar",
+                    "questions": [
+                        {
+                            "question": "Keliling persegi panjang dengan panjang 15 cm dan lebar 8 cm adalah?",
+                            "options": [
+                                "30 cm",
+                                "23 cm",
+                                "120 cm",
+                                "46 cm"
+                            ]
+                        },
+                        {
+                            "question": "Luas trapesium dengan sisi sejajar 12 cm dan 8 cm serta tinggi 5 cm adalah?",
+                            "options": [
+                                "100 cm²",
+                                "40 cm²",
+                                "60 cm²",
+                                "50 cm²"
+                            ]
+                        },
+                        {
+                            "question": "Diameter lingkaran dengan keliling 88 cm (π = 22/7) adalah?",
+                            "options": [
+                                "44 cm",
+                                "14 cm",
+                                "28 cm",
+                                "21 cm"
+                            ]
+                        },
+                        {
+                            "question": "Luas belah ketupat dengan diagonal 16 cm dan 12 cm adalah?",
+                            "options": [
+                                "192 cm²",
+                                "48 cm²",
+                                "24 cm²",
+                                "96 cm²"
+                            ]
+                        },
+                        {
+                            "question": "Keliling lingkaran dengan diameter 14 cm (π = 22/7) adalah?",
+                            "options": [
+                                "88 cm",
+                                "22 cm",
+                                "66 cm",
+                                "44 cm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bangun-ruang",
+                    "title": "Quiz Bangun Ruang",
+                    "description": "Soal tentang volume dan luas permukaan bangun ruang",
+                    "questions": [
+                        {
+                            "question": "Volume balok dengan panjang 10 cm, lebar 6 cm, dan tinggi 4 cm adalah?",
+                            "options": [
+                                "200 cm³",
+                                "240 cm³",
+                                "280 cm³",
+                                "300 cm³"
+                            ]
+                        },
+                        {
+                            "question": "Luas permukaan kubus dengan rusuk 8 cm adalah?",
+                            "options": [
+                                "256 cm²",
+                                "384 cm²",
+                                "512 cm²",
+                                "64 cm²"
+                            ]
+                        },
+                        {
+                            "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 10 cm (π = 22/7) adalah?",
+                            "options": [
+                                "1.540 cm³",
+                                "1.400 cm³",
+                                "1.680 cm³",
+                                "1.760 cm³"
+                            ]
+                        },
+                        {
+                            "question": "Volume kerucut dengan jari-jari 6 cm dan tinggi 9 cm (π = 3,14) adalah?",
+                            "options": [
+                                "339,12 cm³",
+                                "169,56 cm³",
+                                "254,34 cm³",
+                                "424,68 cm³"
+                            ]
+                        },
+                        {
+                            "question": "Volume bola dengan jari-jari 3 cm (π = 3,14) adalah?",
+                            "options": [
+                                "113,04 cm³",
+                                "84,78 cm³",
+                                "56,52 cm³",
+                                "141,3 cm³"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "peluang-dasar",
+                    "title": "Quiz Peluang Dasar",
+                    "description": "Soal tentang peluang kejadian",
+                    "questions": [
+                        {
+                            "question": "Peluang muncul mata dadu 4 pada pelemparan satu dadu adalah?",
+                            "options": [
+                                "1/3",
+                                "1/4",
+                                "1/6",
+                                "1/2"
+                            ]
+                        },
+                        {
+                            "question": "Dalam sebuah kantong terdapat 5 bola merah dan 3 bola biru. Peluang terambil bola merah adalah?",
+                            "options": [
+                                "3/8",
+                                "5/8",
+                                "1/2",
+                                "3/5"
+                            ]
+                        },
+                        {
+                            "question": "Peluang muncul angka pada pelemparan satu koin adalah?",
+                            "options": [
+                                "2/3",
+                                "1/4",
+                                "1/3",
+                                "1/2"
+                            ]
+                        },
+                        {
+                            "question": "Peluang muncul bilangan prima pada pelemparan satu dadu adalah?",
+                            "options": [
+                                "1/2",
+                                "1/3",
+                                "2/3",
+                                "5/6"
+                            ]
+                        },
+                        {
+                            "question": "Jumlah semua peluang dalam suatu percobaan adalah?",
+                            "options": [
+                                "2",
+                                "0",
+                                "Tak terhingga",
+                                "1"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -221,6 +533,266 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "teks-persuasif",
+                    "title": "Quiz Teks Persuasif",
+                    "description": "Soal tentang teks persuasif dan argumentasi",
+                    "questions": [
+                        {
+                            "question": "Tujuan utama teks persuasif adalah?",
+                            "options": [
+                                "Menjelaskan sesuatu",
+                                "Menceritakan kejadian",
+                                "Membujuk pembaca",
+                                "Mendeskripsikan objek"
+                            ]
+                        },
+                        {
+                            "question": "Struktur teks persuasif yang benar adalah?",
+                            "options": [
+                                "Orientasi - Komplikasi - Resolusi",
+                                "Pengenalan isu - Argumen - Penegasan ulang",
+                                "Pernyataan umum - Deskripsi - Simpulan",
+                                "Abstrak - Orientasi - Krisis"
+                            ]
+                        },
+                        {
+                            "question": "Ciri kebahasaan teks persuasif adalah?",
+                            "options": [
+                                "Menggunakan kata imperatif",
+                                "Menggunakan kata kerja material",
+                                "Menggunakan kata keterangan waktu",
+                                "Menggunakan majas personifikasi"
+                            ]
+                        },
+                        {
+                            "question": "Kata yang tepat untuk memperkuat argumen dalam teks persuasif adalah?",
+                            "options": [
+                                "kemudian, lalu",
+                                "karena, sebab, oleh karena itu",
+                                "di, ke, dari",
+                                "adalah, ialah, yaitu"
+                            ]
+                        },
+                        {
+                            "question": "Bagian yang berisi ajakan atau imbauan dalam teks persuasif disebut?",
+                            "options": [
+                                "Tesis",
+                                "Argumentasi",
+                                "Orientasi",
+                                "Penegasan ulang"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "teks-eksplanasi",
+                    "title": "Quiz Teks Eksplanasi",
+                    "description": "Soal tentang teks eksplanasi",
+                    "questions": [
+                        {
+                            "question": "Teks eksplanasi menjelaskan tentang?",
+                            "options": [
+                                "Proses terjadinya fenomena",
+                                "Pengalaman pribadi",
+                                "Pendapat penulis",
+                                "Deskripsi tempat"
+                            ]
+                        },
+                        {
+                            "question": "Struktur teks eksplanasi meliputi?",
+                            "options": [
+                                "Orientasi - Krisis - Reaksi",
+                                "Pernyataan umum - Urutan sebab akibat - Interpretasi",
+                                "Tesis - Argumen - Kesimpulan",
+                                "Pembuka - Isi - Penutup"
+                            ]
+                        },
+                        {
+                            "question": "Konjungsi yang sering digunakan dalam teks eksplanasi adalah?",
+                            "options": [
+                                "dan, atau, tetapi",
+                                "sehingga, akibatnya, karena itu",
+                                "kemudian, lalu, selanjutnya",
+                                "walaupun, meskipun, biarpun"
+                            ]
+                        },
+                        {
+                            "question": "Teks eksplanasi harus bersifat?",
+                            "options": [
+                                "Imajinatif",
+                                "Faktual dan ilmiah",
+                                "Persuasif",
+                                "Menghibur"
+                            ]
+                        },
+                        {
+                            "question": "Contoh judul teks eksplanasi yang tepat adalah?",
+                            "options": [
+                                "Keindahan Pantai Bali",
+                                "Petualangan di Hutan",
+                                "Proses Terjadinya Hujan",
+                                "Manfaat Olahraga Rutin"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "puisi-dan-pantun",
+                    "title": "Quiz Puisi dan Pantun",
+                    "description": "Soal tentang puisi dan pantun",
+                    "questions": [
+                        {
+                            "question": "Jumlah baris dalam satu bait pantun adalah?",
+                            "options": [
+                                "2 baris",
+                                "4 baris",
+                                "6 baris",
+                                "8 baris"
+                            ]
+                        },
+                        {
+                            "question": "Pola rima pantun yang benar adalah?",
+                            "options": [
+                                "a-a-a-a",
+                                "a-b-a-b",
+                                "a-b-c-d",
+                                "a-a-b-b"
+                            ]
+                        },
+                        {
+                            "question": "Dua baris pertama dalam pantun disebut?",
+                            "options": [
+                                "Isi",
+                                "Sampiran",
+                                "Tema",
+                                "Amanat"
+                            ]
+                        },
+                        {
+                            "question": "Majas yang menyamakan sesuatu dengan kata 'seperti' atau 'bagai' adalah?",
+                            "options": [
+                                "Metafora",
+                                "Hiperbola",
+                                "Personifikasi",
+                                "Simile"
+                            ]
+                        },
+                        {
+                            "question": "Pesan atau nilai yang ingin disampaikan penyair disebut?",
+                            "options": [
+                                "Diksi",
+                                "Tema",
+                                "Amanat",
+                                "Rima"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "kata-dan-kalimat",
+                    "title": "Quiz Kata dan Kalimat",
+                    "description": "Soal tentang jenis kata dan kalimat",
+                    "questions": [
+                        {
+                            "question": "Kata yang menunjukkan tindakan atau perbuatan disebut?",
+                            "options": [
+                                "Kata benda",
+                                "Kata sifat",
+                                "Kata kerja",
+                                "Kata keterangan"
+                            ]
+                        },
+                        {
+                            "question": "Kalimat yang memiliki satu subjek dan satu predikat disebut?",
+                            "options": [
+                                "Kalimat majemuk",
+                                "Kalimat tunggal",
+                                "Kalimat kompleks",
+                                "Kalimat bertingkat"
+                            ]
+                        },
+                        {
+                            "question": "Imbuhan yang terdiri dari awalan dan akhiran secara bersamaan disebut?",
+                            "options": [
+                                "Prefiks",
+                                "Sufiks",
+                                "Konfiks",
+                                "Infiks"
+                            ]
+                        },
+                        {
+                            "question": "Kata penghubung 'sehingga' dalam kalimat berfungsi menyatakan?",
+                            "options": [
+                                "Pertentangan",
+                                "Pilihan",
+                                "Akibat",
+                                "Penambahan"
+                            ]
+                        },
+                        {
+                            "question": "Kalimat yang menggunakan kata 'karena' termasuk kalimat?",
+                            "options": [
+                                "Kalimat majemuk setara",
+                                "Kalimat tunggal",
+                                "Kalimat majemuk bertingkat",
+                                "Kalimat perintah"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ejaan-dan-tanda-baca",
+                    "title": "Quiz Ejaan dan Tanda Baca",
+                    "description": "Soal tentang penggunaan ejaan dan tanda baca",
+                    "questions": [
+                        {
+                            "question": "Penulisan gelar yang benar adalah?",
+                            "options": [
+                                "Dr. Ahmad",
+                                "Dr Ahmad",
+                                "dr. Ahmad",
+                                "DR Ahmad"
+                            ]
+                        },
+                        {
+                            "question": "Tanda baca yang digunakan untuk memisahkan kalimat langsung dengan penjelasannya adalah?",
+                            "options": [
+                                "Titik (.)",
+                                "Koma (,)",
+                                "Titik dua (:)",
+                                "Titik koma (;)"
+                            ]
+                        },
+                        {
+                            "question": "Penulisan kata depan 'di' yang benar dalam kalimat 'Saya belajar ... rumah' adalah?",
+                            "options": [
+                                "dirumah",
+                                "di rumah",
+                                "di-rumah",
+                                "Dirumah"
+                            ]
+                        },
+                        {
+                            "question": "Huruf kapital digunakan pada awal kata dalam hal?",
+                            "options": [
+                                "Nama hari, bulan, dan tahun",
+                                "Nama mata pelajaran",
+                                "Nama jabatan yang tidak diikuti nama",
+                                "Semua kata dalam judul"
+                            ]
+                        },
+                        {
+                            "question": "Penulisan kata ulang yang benar adalah?",
+                            "options": [
+                                "anak anak",
+                                "anak-anak",
+                                "anakanak",
+                                "anak2"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -330,6 +902,698 @@
                                 "Gaya kali jarak",
                                 "Massa kali percepatan",
                                 "Energi potensial"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hukum-newton",
+                    "title": "Quiz Hukum Newton",
+                    "description": "Soal tentang hukum Newton tentang gerak",
+                    "questions": [
+                        {
+                            "question": "Hukum I Newton menyatakan bahwa benda akan tetap diam atau bergerak lurus beraturan jika?",
+                            "options": [
+                                "Gaya yang bekerja sangat besar",
+                                "Resultan gaya yang bekerja nol",
+                                "Ada gaya gesek",
+                                "Massa benda besar"
+                            ]
+                        },
+                        {
+                            "question": "Rumus Hukum II Newton adalah?",
+                            "options": [
+                                "F = m × a",
+                                "F = m × v",
+                                "F = m/a",
+                                "F = a/m"
+                            ]
+                        },
+                        {
+                            "question": "Hukum III Newton berbunyi?",
+                            "options": [
+                                "Gaya sebanding dengan massa",
+                                "Benda tetap diam jika tidak ada gaya",
+                                "Aksi = Reaksi",
+                                "Gaya berbanding terbalik dengan massa"
+                            ]
+                        },
+                        {
+                            "question": "Sebuah benda bermassa 5 kg diberi gaya 20 N. Percepatan benda adalah?",
+                            "options": [
+                                "2 m/s²",
+                                "4 m/s²",
+                                "10 m/s²",
+                                "100 m/s²"
+                            ]
+                        },
+                        {
+                            "question": "Satuan gaya dalam SI adalah?",
+                            "options": [
+                                "Joule",
+                                "Newton",
+                                "Watt",
+                                "Pascal"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "suhu-dan-kalor",
+                    "title": "Quiz Suhu dan Kalor",
+                    "description": "Soal tentang suhu dan kalor",
+                    "questions": [
+                        {
+                            "question": "Satuan suhu dalam SI adalah?",
+                            "options": [
+                                "Celsius",
+                                "Kelvin",
+                                "Fahrenheit",
+                                "Reamur"
+                            ]
+                        },
+                        {
+                            "question": "Titik beku air dalam skala Celsius adalah?",
+                            "options": [
+                                "100°C",
+                                "0°C",
+                                "32°C",
+                                "-273°C"
+                            ]
+                        },
+                        {
+                            "question": "Rumus kalor untuk menaikkan suhu adalah?",
+                            "options": [
+                                "Q = m × L",
+                                "Q = m × c × ΔT",
+                                "Q = m × g × h",
+                                "Q = ½ × m × v²"
+                            ]
+                        },
+                        {
+                            "question": "Perpindahan kalor tanpa zat perantara disebut?",
+                            "options": [
+                                "Konduksi",
+                                "Radiasi",
+                                "Konveksi",
+                                "Isolasi"
+                            ]
+                        },
+                        {
+                            "question": "Kalor jenis air adalah 4200 J/kg°C. Kalor yang dibutuhkan untuk menaikkan suhu 2 kg air dari 20°C menjadi 30°C adalah?",
+                            "options": [
+                                "42.000 J",
+                                "84.000 J",
+                                "126.000 J",
+                                "168.000 J"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "listrik-statis",
+                    "title": "Quiz Listrik Statis",
+                    "description": "Soal tentang listrik statis",
+                    "questions": [
+                        {
+                            "question": "Muatan listrik terkecil adalah muatan?",
+                            "options": [
+                                "Proton",
+                                "Neutron",
+                                "Elektron",
+                                "Atom"
+                            ]
+                        },
+                        {
+                            "question": "Dua muatan sejenis jika didekatkan akan?",
+                            "options": [
+                                "Tarik-menarik",
+                                "Tolak-menolak",
+                                "Diam saja",
+                                "Melebur"
+                            ]
+                        },
+                        {
+                            "question": "Satuan muatan listrik adalah?",
+                            "options": [
+                                "Ampere",
+                                "Volt",
+                                "Coulomb",
+                                "Ohm"
+                            ]
+                        },
+                        {
+                            "question": "Benda yang digosok dengan kain wol akan bermuatan?",
+                            "options": [
+                                "Positif",
+                                "Negatif",
+                                "Netral",
+                                "Campuran"
+                            ]
+                        },
+                        {
+                            "question": "Hukum Coulomb menyatakan bahwa gaya listrik berbanding lurus dengan?",
+                            "options": [
+                                "Jarak kedua muatan",
+                                "Hasil kali kedua muatan",
+                                "Kuadrat jarak",
+                                "Massa benda"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gelombang-bunyi",
+                    "title": "Quiz Gelombang dan Bunyi",
+                    "description": "Soal tentang gelombang dan bunyi",
+                    "questions": [
+                        {
+                            "question": "Gelombang yang arah rambatnya tegak lurus arah getarnya disebut?",
+                            "options": [
+                                "Gelombang longitudinal",
+                                "Gelombang mekanik",
+                                "Gelombang transversal",
+                                "Gelombang elektromagnetik"
+                            ]
+                        },
+                        {
+                            "question": "Cepat rambat bunyi di udara pada suhu 20°C adalah sekitar?",
+                            "options": [
+                                "340 m/s",
+                                "300 m/s",
+                                "400 m/s",
+                                "500 m/s"
+                            ]
+                        },
+                        {
+                            "question": "Frekuensi bunyi yang dapat didengar manusia adalah?",
+                            "options": [
+                                "0 - 20 Hz",
+                                "20 - 20.000 Hz",
+                                "20.000 - 100.000 Hz",
+                                "Di atas 100.000 Hz"
+                            ]
+                        },
+                        {
+                            "question": "Bunyi dengan frekuensi di atas 20.000 Hz disebut?",
+                            "options": [
+                                "Infrasonik",
+                                "Audiosonik",
+                                "Ultrasonik",
+                                "Supersonik"
+                            ]
+                        },
+                        {
+                            "question": "Resonansi terjadi ketika?",
+                            "options": [
+                                "Dua benda memiliki massa sama",
+                                "Frekuensi getaran sama",
+                                "Amplitudo berbeda",
+                                "Tidak ada gelombang"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "optik-cahaya",
+                    "title": "Quiz Optik dan Cahaya",
+                    "description": "Soal tentang cahaya dan optik",
+                    "questions": [
+                        {
+                            "question": "Hukum pemantulan cahaya menyatakan bahwa sudut datang?",
+                            "options": [
+                                "Lebih besar dari sudut pantul",
+                                "Sama dengan sudut pantul",
+                                "Lebih kecil dari sudut pantul",
+                                "Tidak berhubungan dengan sudut pantul"
+                            ]
+                        },
+                        {
+                            "question": "Cermin cekung digunakan pada?",
+                            "options": [
+                                "Kacamata minus",
+                                "Senter",
+                                "Spion motor",
+                                "Periskop"
+                            ]
+                        },
+                        {
+                            "question": "Pembiasan cahaya terjadi karena?",
+                            "options": [
+                                "Cahaya dipantulkan",
+                                "Cahaya diserap",
+                                "Cahaya melewati dua medium berbeda",
+                                "Cahaya dihamburkan"
+                            ]
+                        },
+                        {
+                            "question": "Lensa cembung bersifat?",
+                            "options": [
+                                "Mengumpulkan cahaya (konvergen)",
+                                "Menyebarkan cahaya (divergen)",
+                                "Memantulkan cahaya",
+                                "Menyerap cahaya"
+                            ]
+                        },
+                        {
+                            "question": "Rumus untuk menghitung indeks bias adalah?",
+                            "options": [
+                                "n = c/v",
+                                "n = v/c",
+                                "n = c × v",
+                                "n = c - v"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "tekanan",
+                    "title": "Quiz Tekanan",
+                    "description": "Soal tentang tekanan zat",
+                    "questions": [
+                        {
+                            "question": "Rumus tekanan adalah?",
+                            "options": [
+                                "P = F/A",
+                                "P = F × A",
+                                "P = A/F",
+                                "P = F + A"
+                            ]
+                        },
+                        {
+                            "question": "Satuan tekanan dalam SI adalah?",
+                            "options": [
+                                "Newton",
+                                "Joule",
+                                "Pascal",
+                                "Watt"
+                            ]
+                        },
+                        {
+                            "question": "Tekanan hidrostatis dipengaruhi oleh?",
+                            "options": [
+                                "Massa jenis, gravitasi, dan kedalaman",
+                                "Luas permukaan",
+                                "Volume wadah",
+                                "Bentuk wadah"
+                            ]
+                        },
+                        {
+                            "question": "Hukum Pascal menyatakan bahwa tekanan yang diberikan pada zat cair dalam ruang tertutup akan?",
+                            "options": [
+                                "Berkurang",
+                                "Diteruskan ke segala arah sama besar",
+                                "Hilang",
+                                "Bertambah dua kali lipat"
+                            ]
+                        },
+                        {
+                            "question": "Alat yang bekerja berdasarkan hukum Pascal adalah?",
+                            "options": [
+                                "Barometer",
+                                "Manometer",
+                                "Dongkrak hidrolik",
+                                "Termometer"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bahasa-inggris",
+            "name": "Bahasa Inggris",
+            "icon": "🌍",
+            "description": "Test your English language skills",
+            "quizzes": [
+                {
+                    "id": "tenses-basic",
+                    "title": "Quiz Basic Tenses",
+                    "description": "Questions about basic English tenses",
+                    "questions": [
+                        {
+                            "question": "Which sentence is in the present continuous tense?",
+                            "options": [
+                                "I am studying English now",
+                                "I study English every day",
+                                "I studied English yesterday",
+                                "I will study English tomorrow"
+                            ]
+                        },
+                        {
+                            "question": "What is the correct past tense of 'go'?",
+                            "options": [
+                                "Goed",
+                                "Went",
+                                "Gone",
+                                "Going"
+                            ]
+                        },
+                        {
+                            "question": "She _____ to school every morning.",
+                            "options": [
+                                "go",
+                                "goes",
+                                "going",
+                                "gone"
+                            ]
+                        },
+                        {
+                            "question": "They _____ playing football when it started to rain.",
+                            "options": [
+                                "was",
+                                "were",
+                                "is",
+                                "are"
+                            ]
+                        },
+                        {
+                            "question": "I _____ finished my homework yet.",
+                            "options": [
+                                "have",
+                                "haven't",
+                                "hasn't",
+                                "had"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "reading-comprehension",
+                    "title": "Quiz Reading Comprehension",
+                    "description": "Questions about understanding English texts",
+                    "questions": [
+                        {
+                            "question": "What is the main purpose of a descriptive text?",
+                            "options": [
+                                "To give instructions",
+                                "To persuade readers",
+                                "To describe a person, place, or thing",
+                                "To entertain readers"
+                            ]
+                        },
+                        {
+                            "question": "A narrative text usually tells about?",
+                            "options": [
+                                "A story or event",
+                                "Steps to do something",
+                                "Facts and data",
+                                "Arguments and opinions"
+                            ]
+                        },
+                        {
+                            "question": "What does 'moral value' mean in a story?",
+                            "options": [
+                                "The main character",
+                                "The problem in the story",
+                                "The setting of the story",
+                                "The lesson we can learn"
+                            ]
+                        },
+                        {
+                            "question": "Which word is a synonym for 'beautiful'?",
+                            "options": [
+                                "Gorgeous",
+                                "Bad",
+                                "Small",
+                                "Ugly"
+                            ]
+                        },
+                        {
+                            "question": "What is the opposite of 'difficult'?",
+                            "options": [
+                                "Complex",
+                                "Easy",
+                                "Hard",
+                                "Tough"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "grammar-advanced",
+                    "title": "Quiz Advanced Grammar",
+                    "description": "Advanced grammar questions",
+                    "questions": [
+                        {
+                            "question": "If I _____ rich, I would travel around the world.",
+                            "options": [
+                                "be",
+                                "was",
+                                "am",
+                                "were"
+                            ]
+                        },
+                        {
+                            "question": "The letter _____ by my mother yesterday.",
+                            "options": [
+                                "was written",
+                                "wrote",
+                                "writes",
+                                "is written"
+                            ]
+                        },
+                        {
+                            "question": "She asked me _____ I had finished the project.",
+                            "options": [
+                                "when",
+                                "that",
+                                "what",
+                                "if"
+                            ]
+                        },
+                        {
+                            "question": "This is the book _____ I told you about.",
+                            "options": [
+                                "whose",
+                                "whom",
+                                "which",
+                                "who"
+                            ]
+                        },
+                        {
+                            "question": "By next year, I _____ here for five years.",
+                            "options": [
+                                "work",
+                                "have worked",
+                                "will have worked",
+                                "will work"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bahasa-jawa",
+            "name": "Bahasa Jawa",
+            "icon": "🎭",
+            "description": "Uji kemampuan bahasa Jawa Anda",
+            "quizzes": [
+                {
+                    "id": "unggah-ungguh",
+                    "title": "Quiz Unggah-Ungguh Basa",
+                    "description": "Soal tentang tingkat tutur bahasa Jawa",
+                    "questions": [
+                        {
+                            "question": "Tingkat tutur bahasa Jawa yang paling halus adalah?",
+                            "options": [
+                                "Ngoko Alus",
+                                "Krama Madya",
+                                "Krama Inggil",
+                                "Ngoko"
+                            ]
+                        },
+                        {
+                            "question": "Kata 'mangan' dalam krama inggil adalah?",
+                            "options": [
+                                "Maem",
+                                "Nedha",
+                                "Tuang",
+                                "Dhahar"
+                            ]
+                        },
+                        {
+                            "question": "Unggah-ungguh basa digunakan untuk?",
+                            "options": [
+                                "Menghormati lawan bicara",
+                                "Menulis surat",
+                                "Berbicara dengan teman sebaya",
+                                "Berbicara dengan anak kecil"
+                            ]
+                        },
+                        {
+                            "question": "Kata 'turu' dalam krama adalah?",
+                            "options": [
+                                "Guling",
+                                "Bobok",
+                                "Tilem",
+                                "Sare"
+                            ]
+                        },
+                        {
+                            "question": "Bahasa yang digunakan untuk berbicara dengan orang tua adalah?",
+                            "options": [
+                                "Bahasa gaul",
+                                "Krama",
+                                "Ngoko Alus",
+                                "Ngoko"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "tembang-macapat",
+                    "title": "Quiz Tembang Macapat",
+                    "description": "Soal tentang tembang Jawa",
+                    "questions": [
+                        {
+                            "question": "Tembang macapat yang memiliki watak sedih adalah?",
+                            "options": [
+                                "Kinanthi",
+                                "Mijil",
+                                "Gambuh",
+                                "Maskumambang"
+                            ]
+                        },
+                        {
+                            "question": "Jumlah tembang macapat ada?",
+                            "options": [
+                                "10",
+                                "12",
+                                "11",
+                                "9"
+                            ]
+                        },
+                        {
+                            "question": "Guru gatra dalam tembang adalah?",
+                            "options": [
+                                "Irama lagu",
+                                "Jenis vokal akhir",
+                                "Jumlah suku kata",
+                                "Jumlah baris"
+                            ]
+                        },
+                        {
+                            "question": "Tembang Dhandhanggula memiliki watak?",
+                            "options": [
+                                "Gembira dan luwes",
+                                "Takut",
+                                "Marah",
+                                "Sedih"
+                            ]
+                        },
+                        {
+                            "question": "Guru wilangan adalah?",
+                            "options": [
+                                "Vokal akhir",
+                                "Jumlah tembang",
+                                "Jumlah suku kata tiap baris",
+                                "Jumlah baris"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "aksara-jawa",
+                    "title": "Quiz Aksara Jawa",
+                    "description": "Soal tentang huruf dan aksara Jawa",
+                    "questions": [
+                        {
+                            "question": "Jumlah aksara Jawa nglegena ada?",
+                            "options": [
+                                "18",
+                                "20",
+                                "22",
+                                "26"
+                            ]
+                        },
+                        {
+                            "question": "Sandhangan yang digunakan untuk bunyi 'i' adalah?",
+                            "options": [
+                                "Wulu",
+                                "Suku",
+                                "Pepet",
+                                "Taling"
+                            ]
+                        },
+                        {
+                            "question": "Aksara swara dalam aksara Jawa berjumlah?",
+                            "options": [
+                                "3",
+                                "5",
+                                "7",
+                                "9"
+                            ]
+                        },
+                        {
+                            "question": "Sandhangan panyigeg wanda adalah?",
+                            "options": [
+                                "Wignyan, layar, cecak",
+                                "Wulu, suku, pepet",
+                                "Taling, tolong, taling tarung",
+                                "Cakra, keret, pengkal"
+                            ]
+                        },
+                        {
+                            "question": "Pada (.) dalam aksara Jawa disebut?",
+                            "options": [
+                                "Pangku",
+                                "Pada lingsa",
+                                "Pada lungsi",
+                                "Adeg-adeg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "paribasan-bebasan",
+                    "title": "Quiz Paribasan lan Bebasan",
+                    "description": "Soal tentang peribahasa Jawa",
+                    "questions": [
+                        {
+                            "question": "Arti dari 'Ajining diri saka lathi' adalah?",
+                            "options": [
+                                "Harga diri dari perbuatan",
+                                "Harga diri dari perkataan",
+                                "Harga diri dari pakaian",
+                                "Harga diri dari kekayaan"
+                            ]
+                        },
+                        {
+                            "question": "'Becik ketitik ala ketara' artinya?",
+                            "options": [
+                                "Yang baik akan terlihat, yang buruk akan ketahuan",
+                                "Berbuat baik selalu",
+                                "Jangan berbuat jahat",
+                                "Semua orang sama"
+                            ]
+                        },
+                        {
+                            "question": "Bebasan adalah?",
+                            "options": [
+                                "Ungkapan yang bisa diubah",
+                                "Ungkapan yang tidak bisa diubah",
+                                "Tembang Jawa",
+                                "Cerita rakyat"
+                            ]
+                        },
+                        {
+                            "question": "'Yen salin guna kelangan guna' artinya?",
+                            "options": [
+                                "Berubah profesi kehilangan keahlian",
+                                "Belajar hal baru",
+                                "Mencari pekerjaan",
+                                "Bekerja keras"
+                            ]
+                        },
+                        {
+                            "question": "Paribasan 'Jer basuki mawa beya' berarti?",
+                            "options": [
+                                "Kesuksesan butuh pengorbanan",
+                                "Uang adalah segalanya",
+                                "Bekerja keras",
+                                "Belajar terus"
                             ]
                         }
                     ]
