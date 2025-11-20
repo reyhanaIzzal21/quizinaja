@@ -1,0 +1,340 @@
+{
+    "categories": [
+        {
+            "id": "matematika",
+            "name": "Matematika",
+            "icon": "🔢",
+            "description": "Uji kemampuan matematika Anda",
+            "quizzes": [
+                {
+                    "id": "aljabar",
+                    "title": "Quiz Aljabar",
+                    "description": "Soal-soal aljabar dasar",
+                    "questions": [
+                        {
+                            "question": "Berapakah hasil dari 2x + 5 = 15?",
+                            "options": [
+                                "x = 5",
+                                "x = 10",
+                                "x = 7",
+                                "x = 8"
+                            ]
+                        },
+                        {
+                            "question": "Jika 3y - 7 = 14, maka nilai y adalah?",
+                            "options": [
+                                "y = 5",
+                                "y = 7",
+                                "y = 9",
+                                "y = 11"
+                            ]
+                        },
+                        {
+                            "question": "Hasil dari (x + 3)(x - 3) adalah?",
+                            "options": [
+                                "x² - 9",
+                                "x² + 9",
+                                "x² - 6",
+                                "x² + 6"
+                            ]
+                        },
+                        {
+                            "question": "Jika a² = 64, maka nilai a adalah?",
+                            "options": [
+                                "±6",
+                                "±8",
+                                "±10",
+                                "±12"
+                            ]
+                        },
+                        {
+                            "question": "Berapakah hasil dari 5(2x + 3)?",
+                            "options": [
+                                "10x + 3",
+                                "7x + 8",
+                                "10x + 15",
+                                "5x + 15"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "geometri",
+                    "title": "Quiz Geometri",
+                    "description": "Soal-soal geometri",
+                    "questions": [
+                        {
+                            "question": "Luas lingkaran dengan jari-jari 7 cm adalah? (π = 22/7)",
+                            "options": [
+                                "144 cm²",
+                                "154 cm²",
+                                "164 cm²",
+                                "174 cm²"
+                            ]
+                        },
+                        {
+                            "question": "Keliling persegi dengan sisi 12 cm adalah?",
+                            "options": [
+                                "36 cm",
+                                "48 cm",
+                                "60 cm",
+                                "72 cm"
+                            ]
+                        },
+                        {
+                            "question": "Volume kubus dengan rusuk 5 cm adalah?",
+                            "options": [
+                                "100 cm³",
+                                "125 cm³",
+                                "150 cm³",
+                                "175 cm³"
+                            ]
+                        },
+                        {
+                            "question": "Luas segitiga dengan alas 10 cm dan tinggi 8 cm adalah?",
+                            "options": [
+                                "30 cm²",
+                                "40 cm²",
+                                "50 cm²",
+                                "80 cm²"
+                            ]
+                        },
+                        {
+                            "question": "Sudut dalam segitiga sama sisi adalah?",
+                            "options": [
+                                "45°",
+                                "60°",
+                                "90°",
+                                "120°"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bahasa-indonesia",
+            "name": "Bahasa Indonesia",
+            "icon": "📚",
+            "description": "Uji kemampuan bahasa Indonesia Anda",
+            "quizzes": [
+                {
+                    "id": "teks-laporan",
+                    "title": "Quiz Teks Laporan Hasil Observasi",
+                    "description": "Soal tentang teks laporan",
+                    "questions": [
+                        {
+                            "question": "Teks laporan hasil observasi bersifat?",
+                            "options": [
+                                "Objektif dan faktual",
+                                "Subjektif dan imajinatif",
+                                "Persuasif",
+                                "Naratif"
+                            ]
+                        },
+                        {
+                            "question": "Struktur teks laporan hasil observasi yang benar adalah?",
+                            "options": [
+                                "Orientasi - Komplikasi - Resolusi",
+                                "Pernyataan umum - Deskripsi bagian - Simpulan",
+                                "Tesis - Argumentasi - Penegasan",
+                                "Pengenalan - Isi - Penutup"
+                            ]
+                        },
+                        {
+                            "question": "Ciri kebahasaan teks laporan hasil observasi adalah?",
+                            "options": [
+                                "Menggunakan kata kerja aktif",
+                                "Menggunakan istilah teknis",
+                                "Menggunakan kata sambung temporal",
+                                "Menggunakan kata ganti orang pertama"
+                            ]
+                        },
+                        {
+                            "question": "Tujuan teks laporan hasil observasi adalah?",
+                            "options": [
+                                "Menghibur pembaca",
+                                "Menyampaikan informasi faktual",
+                                "Membujuk pembaca",
+                                "Menceritakan pengalaman"
+                            ]
+                        },
+                        {
+                            "question": "Bagian yang berisi klasifikasi objek dalam teks laporan adalah?",
+                            "options": [
+                                "Orientasi",
+                                "Deskripsi bagian",
+                                "Komplikasi",
+                                "Resolusi"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bahasa-Indonesia-Advanced",
+                    "title": "Quiz Teks Laporan Hasil Observasi Lanjutan",
+                    "description": "Soal tentang teks laporan",
+                    "questions": [
+                        {
+                            "question": "Teks laporan hasil observasi bersifat?",
+                            "options": [
+                                "Objektif dan faktual",
+                                "Subjektif dan imajinatif",
+                                "Persuasif",
+                                "Naratif"
+                            ]
+                        },
+                        {
+                            "question": "Struktur teks laporan hasil observasi yang benar adalah?",
+                            "options": [
+                                "Orientasi - Komplikasi - Resolusi",
+                                "Pernyataan umum - Deskripsi bagian - Simpulan",
+                                "Tesis - Argumentasi - Penegasan",
+                                "Pengenalan - Isi - Penutup"
+                            ]
+                        },
+                        {
+                            "question": "Ciri kebahasaan teks laporan hasil observasi adalah?",
+                            "options": [
+                                "Menggunakan kata kerja aktif",
+                                "Menggunakan istilah teknis",
+                                "Menggunakan kata sambung temporal",
+                                "Menggunakan kata ganti orang pertama"
+                            ]
+                        },
+                        {
+                            "question": "Tujuan teks laporan hasil observasi adalah?",
+                            "options": [
+                                "Menghibur pembaca",
+                                "Menyampaikan informasi faktual",
+                                "Membujuk pembaca",
+                                "Menceritakan pengalaman"
+                            ]
+                        },
+                        {
+                            "question": "Bagian yang berisi klasifikasi objek dalam teks laporan adalah?",
+                            "options": [
+                                "Orientasi",
+                                "Deskripsi bagian",
+                                "Komplikasi",
+                                "Resolusi"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fisika",
+            "name": "Fisika",
+            "icon": "⚛️",
+            "description": "Uji pemahaman konsep fisika Anda",
+            "quizzes": [
+                {
+                    "id": "gerak-lurus",
+                    "title": "Quiz Gerak Lurus",
+                    "description": "Soal-soal gerak lurus",
+                    "questions": [
+                        {
+                            "question": "Rumus kecepatan adalah?",
+                            "options": [
+                                "v = s/t",
+                                "v = s × t",
+                                "v = t/s",
+                                "v = s + t"
+                            ]
+                        },
+                        {
+                            "question": "Satuan percepatan dalam SI adalah?",
+                            "options": [
+                                "m/s",
+                                "m/s²",
+                                "km/jam",
+                                "cm/s"
+                            ]
+                        },
+                        {
+                            "question": "Sebuah mobil bergerak dengan kecepatan 20 m/s selama 5 sekon. Jarak yang ditempuh adalah?",
+                            "options": [
+                                "50 m",
+                                "75 m",
+                                "100 m",
+                                "125 m"
+                            ]
+                        },
+                        {
+                            "question": "Gerak lurus beraturan (GLB) memiliki ciri?",
+                            "options": [
+                                "Kecepatan berubah",
+                                "Percepatan konstan",
+                                "Kecepatan konstan",
+                                "Percepatan nol dan kecepatan nol"
+                            ]
+                        },
+                        {
+                            "question": "Pada GLBB, grafik v terhadap t berbentuk?",
+                            "options": [
+                                "Garis lurus horizontal",
+                                "Garis lurus miring",
+                                "Parabola",
+                                "Lingkaran"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "energi",
+                    "title": "Quiz Energi dan Usaha",
+                    "description": "Soal tentang energi",
+                    "questions": [
+                        {
+                            "question": "Satuan energi dalam SI adalah?",
+                            "options": [
+                                "Watt",
+                                "Joule",
+                                "Newton",
+                                "Pascal"
+                            ]
+                        },
+                        {
+                            "question": "Rumus energi kinetik adalah?",
+                            "options": [
+                                "Ek = mgh",
+                                "Ek = ½mv²",
+                                "Ek = Fs",
+                                "Ek = mc²"
+                            ]
+                        },
+                        {
+                            "question": "Hukum kekekalan energi menyatakan?",
+                            "options": [
+                                "Energi selalu bertambah",
+                                "Energi selalu berkurang",
+                                "Energi tidak dapat diciptakan atau dimusnahkan",
+                                "Energi selalu konstan"
+                            ]
+                        },
+                        {
+                            "question": "Usaha yang dilakukan gaya adalah nol jika?",
+                            "options": [
+                                "Gaya searah perpindahan",
+                                "Gaya tegak lurus perpindahan",
+                                "Gaya berlawanan arah perpindahan",
+                                "Tidak ada gaya"
+                            ]
+                        },
+                        {
+                            "question": "Daya adalah?",
+                            "options": [
+                                "Usaha per satuan waktu",
+                                "Gaya kali jarak",
+                                "Massa kali percepatan",
+                                "Energi potensial"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "aljabar": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "C"
+    ],
+    "geometri": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+    ],
+    "teks-laporan": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "B"
+    ],
+    "bahasa-Indonesia-Advanced": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "B"
+    ],
+    "gerak-lurus": [
+        "A",
+        "B",
+        "C",
+        "C",
+        "B"
+    ],
+    "energi": [
+        "B",
+        "B",
+        "C",
+        "B",
+        "A"
+    ]
+}

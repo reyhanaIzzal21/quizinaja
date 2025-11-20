@@ -1,0 +1,3 @@
+.quiz-card {
+    @apply bg-white p-4 rounded-xl shadow hover:shadow-lg transition;
+}
