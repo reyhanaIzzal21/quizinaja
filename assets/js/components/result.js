@@ -1,80 +1,161 @@
 export const Result = {
     render: function (container, score, total, questions = [], userAnswers = [], correctAnswers = []) {
-        // Fallback
         const totalQuestions = total || 5;
         const percentage = (score / totalQuestions) * 100;
-        let grade, message, color;
+        let grade, message, color, emoji, gradient;
 
-        // Menentukan Grade (Sama seperti sebelumnya)
+        // Menentukan Grade dengan tema Web3
         if (percentage >= 80) {
-            grade = 'Excellent! 🌟';
-            message = 'Luar biasa! Anda menguasai materi dengan sangat baik!';
-            color = 'text-green-600';
+            grade = 'Legendary! 🏆';
+            message = 'Outstanding performance! You are a true Quiz Master!';
+            color = 'text-yellow-400';
+            emoji = '🌟';
+            gradient = 'from-yellow-500 to-orange-500';
         } else if (percentage >= 60) {
-            grade = 'Good! 👍';
-            message = 'Bagus! Terus tingkatkan pemahaman Anda!';
-            color = 'text-blue-600';
+            grade = 'Epic! 💎';
+            message = 'Great job! Keep pushing to reach legendary status!';
+            color = 'text-blue-400';
+            emoji = '💎';
+            gradient = 'from-blue-500 to-purple-500';
         } else {
-            grade = 'Keep Learning! 📚';
-            message = 'Jangan menyerah! Terus belajar dan coba lagi!';
-            color = 'text-orange-600';
+            grade = 'Keep Fighting! ⚔️';
+            message = 'Every master was once a beginner. Try again!';
+            color = 'text-purple-400';
+            emoji = '🔥';
+            gradient = 'from-purple-500 to-pink-500';
         }
 
-        // Generate HTML untuk List Soal (Recap)
+        // Generate floating particles for background
+        const particles = Array.from({ length: 30 }, (_, i) => {
+            const delay = Math.random() * 3;
+            const duration = 3 + Math.random() * 3;
+            const left = Math.random() * 100;
+            const top = Math.random() * 100;
+            const size = Math.random() * 2 + 1;
+            return `
+                <div class="absolute rounded-full bg-purple-500 animate-pulse" 
+                     style="
+                        left: ${left}%; 
+                        top: ${top}%; 
+                        width: ${size}px; 
+                        height: ${size}px;
+                        animation-delay: ${delay}s; 
+                        animation-duration: ${duration}s;
+                        opacity: ${Math.random() * 0.3 + 0.1};
+                     "></div>
+            `;
+        }).join('');
+
+        // Generate HTML untuk List Soal
         const recapHTML = questions.map((q, index) => {
-            const userAns = userAnswers[index] || "-"; // Jawaban user
-            const correctAns = correctAnswers[index];  // Jawaban benar
+            const userAns = userAnswers[index] || "-";
+            const correctAns = correctAnswers[index];
             const isCorrect = userAns === correctAns;
 
-            // Styling Card: Hijau jika benar, Merah jika salah
-            const cardBorderClass = isCorrect ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50';
-            const statusIcon = isCorrect ? '✅ Benar' : '❌ Salah';
-            const statusColor = isCorrect ? 'text-green-700' : 'text-red-700';
+            const cardBorderClass = isCorrect 
+                ? 'border-green-500/30 bg-gradient-to-br from-green-500/5 to-emerald-500/5' 
+                : 'border-red-500/30 bg-gradient-to-br from-red-500/5 to-pink-500/5';
+            
+            const statusIcon = isCorrect ? '✓' : '✗';
+            const statusColor = isCorrect ? 'text-green-400' : 'text-red-400';
+            const statusBg = isCorrect ? 'bg-green-500/20' : 'bg-red-500/20';
 
             return `
-                <div class="bg-white rounded-lg shadow-md p-6 mb-4 border-l-4 ${cardBorderClass}">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Soal ${index + 1}</h3>
-                        <span class="text-sm font-bold ${statusColor} px-3 py-1 rounded-full bg-white shadow-sm">
-                            ${statusIcon}
-                        </span>
-                    </div>
+                <div class="relative group">
+                    <!-- Glow Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r ${isCorrect ? 'from-green-600 to-emerald-600' : 'from-red-600 to-pink-600'} rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
                     
-                    <p class="text-gray-700 mb-4 text-lg">${q.question}</p>
-
-                    <div class="space-y-2">
-                        ${q.options.map((opt, optIndex) => {
-                const letter = String.fromCharCode(65 + optIndex);
-                let optionClass = "p-3 rounded-lg border border-gray-200 flex justify-between items-center";
-                let icon = "";
-
-                // Logika Visual Pilihan Jawaban
-                if (letter === userAns) {
-                    // Ini pilihan user
-                    if (isCorrect) {
-                        // User Benar (Hijau)
-                        optionClass = "p-3 rounded-lg border-2 border-green-500 bg-green-100 font-semibold text-green-800";
-                        icon = "✓ Jawaban Anda";
-                    } else {
-                        // User Salah (Merah)
-                        optionClass = "p-3 rounded-lg border-2 border-red-500 bg-red-100 font-semibold text-red-800";
-                        icon = "Your Choice";
-                    }
-                } else if (letter === correctAns && !isCorrect) {
-                    // Jika user salah, kita kasih highlight tipis ke jawaban yang BENAR (Opsional, biar user tau jawabannya)
-                    optionClass = "p-3 rounded-lg border border-green-300 bg-green-50 text-green-700 border-dashed";
-                    icon = "Kunci Jawaban";
-                }
-
-                return `
-                                <div class="${optionClass}">
-                                    <div>
-                                        <span class="font-bold mr-2">${letter}.</span> ${opt}
-                                    </div>
-                                    ${icon ? `<span class="text-sm font-bold">${icon}</span>` : ''}
+                    <!-- Card -->
+                    <div class="relative rounded-2xl p-6 border ${cardBorderClass} transition-all duration-300 hover:scale-[1.02] overflow-hidden"
+                         style="background: rgba(137, 44, 220, 0.03); backdrop-filter: blur(10px);">
+                        
+                        <!-- Shine Effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                        
+                        <!-- Header -->
+                        <div class="relative flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-lg"
+                                     style="background: rgba(137, 44, 220, 0.2); color: #892CDC;">
+                                    ${index + 1}
                                 </div>
-                            `;
-            }).join('')}
+                                <span class="text-sm font-medium" style="color: rgba(245, 245, 245, 0.6);">
+                                    Question ${index + 1}
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-2 px-4 py-2 rounded-full ${statusBg}">
+                                <span class="text-xl ${statusColor}">${statusIcon}</span>
+                                <span class="text-sm font-bold ${statusColor}">
+                                    ${isCorrect ? 'Correct' : 'Wrong'}
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Question -->
+                        <p class="text-lg mb-6 font-medium" style="color: #f5f5f5;">
+                            ${q.question}
+                        </p>
+
+                        <!-- Options -->
+                        <div class="space-y-3">
+                            ${q.options.map((opt, optIndex) => {
+                                const letter = String.fromCharCode(65 + optIndex);
+                                let optionClass = "relative p-4 rounded-xl border transition-all duration-300";
+                                let icon = "";
+                                let iconColor = "";
+                                let borderColor = "border-purple-500/20";
+                                let bgColor = "rgba(137, 44, 220, 0.05)";
+
+                                if (letter === userAns) {
+                                    if (isCorrect) {
+                                        optionClass += " border-green-500/50 shadow-lg shadow-green-500/20";
+                                        icon = "✓";
+                                        iconColor = "text-green-400";
+                                        bgColor = "rgba(34, 197, 94, 0.1)";
+                                    } else {
+                                        optionClass += " border-red-500/50 shadow-lg shadow-red-500/20";
+                                        icon = "✗";
+                                        iconColor = "text-red-400";
+                                        bgColor = "rgba(239, 68, 68, 0.1)";
+                                    }
+                                } else if (letter === correctAns && !isCorrect) {
+                                    optionClass += " border-green-500/30 border-dashed";
+                                    icon = "✓";
+                                    iconColor = "text-green-400";
+                                    bgColor = "rgba(34, 197, 94, 0.05)";
+                                }
+
+                                return `
+                                    <div class="${optionClass}" style="background: ${bgColor};">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center gap-3 flex-1">
+                                                <div class="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm"
+                                                     style="background: rgba(137, 44, 220, 0.2); color: #892CDC;">
+                                                    ${letter}
+                                                </div>
+                                                <span style="color: #f5f5f5;">${opt}</span>
+                                            </div>
+                                            ${icon ? `
+                                                <div class="flex items-center gap-2">
+                                                    <span class="text-2xl ${iconColor}">${icon}</span>
+                                                    ${letter === userAns ? `
+                                                        <span class="text-xs font-semibold px-2 py-1 rounded-full" 
+                                                              style="background: ${isCorrect ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)'}; color: ${isCorrect ? '#4ade80' : '#f87171'};">
+                                                            Your Answer
+                                                        </span>
+                                                    ` : letter === correctAns ? `
+                                                        <span class="text-xs font-semibold px-2 py-1 rounded-full" 
+                                                              style="background: rgba(34, 197, 94, 0.2); color: #4ade80;">
+                                                            Correct Answer
+                                                        </span>
+                                                    ` : ''}
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
                     </div>
                 </div>
             `;
@@ -82,47 +163,165 @@ export const Result = {
 
         // Render HTML Utama
         container.innerHTML = `
-            <div class="max-w-3xl mx-auto pb-10">
-                <!-- Bagian Score (Header) -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center mb-8">
-                    <h2 class="text-4xl font-bold ${color} mb-4">${grade}</h2>
-                    <div class="text-6xl font-bold text-gray-800 mb-4">
-                        ${score}/${totalQuestions}
-                    </div>
-                    <p class="text-xl text-gray-600 mb-6">${message}</p>
+            <!-- Animated Background -->
+            <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+                <div class="absolute inset-0">${particles}</div>
+                
+                <!-- Gradient Orbs -->
+                <div class="absolute w-96 h-96 rounded-full animate-pulse" 
+                     style="left: 10%; top: 20%; background: radial-gradient(circle, rgba(137, 44, 220, 0.2) 0%, transparent 70%); filter: blur(150px);"></div>
+                <div class="absolute w-96 h-96 rounded-full animate-pulse" 
+                     style="right: 10%; top: 40%; background: radial-gradient(circle, rgba(82, 5, 123, 0.2) 0%, transparent 70%); filter: blur(150px);"></div>
+            </div>
+
+            <div class="max-w-5xl mx-auto pb-20 pt-8 relative z-10">
+                <!-- Header Score Card -->
+                <div class="relative mb-12 group">
+                    <!-- Glow Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r ${gradient} rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
                     
-                    <div class="w-full bg-gray-200 rounded-full h-6 mb-8">
-                        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 h-6 rounded-full transition-all flex items-center justify-center text-white font-bold" 
-                             style="width: ${percentage}%">
-                            ${percentage.toFixed(0)}%
+                    <!-- Main Card -->
+                    <div class="relative rounded-3xl p-10 overflow-hidden"
+                         style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.3); backdrop-filter: blur(20px);">
+                        
+                        <!-- Animated Background -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 via-transparent to-pink-600/5"></div>
+                        
+                        <!-- Content -->
+                        <div class="relative text-center">
+                            <!-- Trophy Animation -->
+                            <div class="mb-6 inline-block animate-bounce">
+                                <div class="text-8xl mb-2 drop-shadow-2xl">${emoji}</div>
+                            </div>
+
+                            <!-- Grade -->
+                            <h2 class="text-5xl md:text-6xl font-bold mb-4 ${color} drop-shadow-lg">
+                                ${grade}
+                            </h2>
+
+                            <!-- Score Display -->
+                            <div class="flex items-center justify-center gap-4 mb-6">
+                                <div class="text-7xl md:text-8xl font-bold bg-gradient-to-r ${gradient} bg-clip-text text-transparent drop-shadow-2xl">
+                                    ${score}
+                                </div>
+                                <div class="text-4xl font-bold" style="color: rgba(245, 245, 245, 0.3);">/</div>
+                                <div class="text-5xl md:text-6xl font-bold" style="color: rgba(245, 245, 245, 0.5);">
+                                    ${totalQuestions}
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" style="color: rgba(245, 245, 245, 0.7);">
+                                ${message}
+                            </p>
+
+                            <!-- Progress Bar -->
+                            <div class="relative w-full h-6 rounded-full mb-8 overflow-hidden"
+                                 style="background: rgba(137, 44, 220, 0.1);">
+                                <div class="absolute inset-0 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r ${gradient} transition-all duration-1000 ease-out flex items-center justify-end pr-4 relative"
+                                         style="width: ${percentage}%;">
+                                        <!-- Shine Effect -->
+                                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                                        <span class="relative text-sm font-bold text-white drop-shadow-lg z-10">
+                                            ${percentage.toFixed(0)}%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Stats Row -->
+                            <div class="flex flex-wrap justify-center gap-6 mb-8">
+                                <!-- Correct Answers -->
+                                <div class="flex items-center gap-3 px-6 py-3 rounded-xl"
+                                     style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3);">
+                                    <span class="text-2xl">✓</span>
+                                    <div class="text-left">
+                                        <div class="text-2xl font-bold text-green-400">${score}</div>
+                                        <div class="text-xs" style="color: rgba(245, 245, 245, 0.5);">Correct</div>
+                                    </div>
+                                </div>
+
+                                <!-- Wrong Answers -->
+                                <div class="flex items-center gap-3 px-6 py-3 rounded-xl"
+                                     style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3);">
+                                    <span class="text-2xl">✗</span>
+                                    <div class="text-left">
+                                        <div class="text-2xl font-bold text-red-400">${totalQuestions - score}</div>
+                                        <div class="text-xs" style="color: rgba(245, 245, 245, 0.5);">Wrong</div>
+                                    </div>
+                                </div>
+
+                                <!-- Accuracy -->
+                                <div class="flex items-center gap-3 px-6 py-3 rounded-xl"
+                                     style="background: rgba(137, 44, 220, 0.1); border: 1px solid rgba(137, 44, 220, 0.3);">
+                                    <span class="text-2xl">🎯</span>
+                                    <div class="text-left">
+                                        <div class="text-2xl font-bold" style="color: #892CDC;">${percentage.toFixed(0)}%</div>
+                                        <div class="text-xs" style="color: rgba(245, 245, 245, 0.5);">Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-wrap justify-center gap-4">
+                                <button onclick="app.router.navigate('home')"
+                                        class="relative group/btn px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105"
+                                        style="background: rgba(137, 44, 220, 0.2); border: 2px solid rgba(137, 44, 220, 0.5); color: #f5f5f5;">
+                                    <span class="relative z-10 flex items-center gap-2">
+                                        <span>Back to Home</span>
+                                    </span>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                                </button>
+
+                                <button onclick="location.reload()"
+                                        class="relative group/btn px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105"
+                                        style="background: linear-gradient(135deg, #892CDC, #52057B); color: #f5f5f5; box-shadow: 0 10px 30px rgba(137, 44, 220, 0.3);">
+                                    <span class="relative z-10 flex items-center gap-2">
+                                        <span>Try Another Quiz</span>
+                                    </span>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                                </button>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="space-x-4">
-                        <button onclick="app.router.navigate('home')"
-                                class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition font-semibold shadow-md">
-                            Kembali ke Home
-                        </button>
-                        <button onclick="location.reload()"
-                                class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition font-semibold shadow-md">
-                            Coba Quiz Lain
-                        </button>
+                <!-- Review Section Header -->
+                <div class="flex items-center justify-between mb-8 px-2">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2" style="color: #f5f5f5;">
+                            📝 Answer Review
+                        </h2>
+                        <p class="text-sm md:text-base" style="color: rgba(245, 245, 245, 0.5);">
+                            Detailed breakdown of your performance
+                        </p>
                     </div>
                 </div>
 
-                <!-- Bagian Judul Rekapan -->
-                <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-2xl font-bold text-gray-800">📝 Analisis Jawaban</h2>
-                    <span class="text-sm text-gray-500">Review hasil pekerjaan Anda</span>
-                </div>
-
-                <!-- Bagian List Soal (Recap Cards) -->
-                <div class="space-y-6 fade-in">
+                <!-- Questions List -->
+                <div class="space-y-6 mb-16">
                     ${recapHTML}
                 </div>
-                
-                <div class="text-center mt-8 text-gray-400 text-sm">
-                    End of Results
+
+                <!-- Bottom CTA -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div class="relative p-8 rounded-2xl text-center"
+                         style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.3); backdrop-filter: blur(10px);">
+                        <div class="text-5xl mb-4">🚀</div>
+                        <h3 class="text-2xl font-bold mb-2" style="color: #f5f5f5;">
+                            Ready for Next Challenge?
+                        </h3>
+                        <p class="mb-6" style="color: rgba(245, 245, 245, 0.6);">
+                            Keep learning and improve your skills!
+                        </p>
+                        <button onclick="app.router.navigate('home')"
+                                class="px-8 py-3 rounded-xl font-bold transition-all hover:scale-105"
+                                style="background: linear-gradient(135deg, #892CDC, #52057B); color: #f5f5f5; box-shadow: 0 8px 25px rgba(137, 44, 220, 0.3);">
+                            Explore More Quizzes
+                        </button>
+                    </div>
                 </div>
             </div>
         `;
