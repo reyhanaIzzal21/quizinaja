@@ -32,11 +32,11 @@ export function getCategories() {
     return questionsData ? questionsData.categories : [];
 }
 
-export function getCategory(categoryId) {
+export function getCategoryById(categoryId) {
     return questionsData ? questionsData.categories.find(cat => cat.id === categoryId) : null;
 }
 
 export function getQuiz(categoryId, quizId) {
-    const category = getCategory(categoryId);
+    const category = getCategoryById(categoryId);
     return category ? category.quizzes.find(q => q.id === quizId) : null;
 }
