@@ -2,6 +2,7 @@ import { Home } from './components/home.js';
 import { QuizList } from './components/quizList.js';
 import { QuizPage } from './components/quizPage.js';
 import { Result } from './components/result.js';
+import { Generator } from './components/genarator.js';
 
 export const Router = {
     currentRoute: 'home',
@@ -37,6 +38,9 @@ export const Router = {
                     this.params.userAnswers,    // Jawaban User
                     this.params.correctAnswers  // Kunci Jawaban
                 );
+                break;
+            case 'generator':
+                Generator.render(appElement);
                 break;
             default:
                 Home.render(appElement);

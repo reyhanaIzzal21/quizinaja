@@ -7,6 +7,7 @@ import { Home } from './components/home.js';
 import { QuizList } from './components/quizList.js';
 import { QuizPage } from './components/quizPage.js';
 import { Result } from './components/result.js';
+import { Generator } from './components/genarator.js';
 
 const app = {
     router: Router,
@@ -15,7 +16,8 @@ const app = {
         Home,
         QuizList,
         QuizPage,
-        Result
+        Result,
+        Generator
     },
     
     init: async function () {
