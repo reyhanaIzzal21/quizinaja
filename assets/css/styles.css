@@ -1,11 +1,38 @@
+:root {
+    --bg-color: #000;
+    --primary-color: #892CDC;
+    --secondary-color: #52057B;
+    --text-color: #f5f5f5;
+    --font-family: 'Arial, sans-serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade In Animation */
 .fade-in {
-    animation: fadeIn 0.3s ease-in;
+    animation: fadeIn 0.6s ease-out;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 
     to {
@@ -14,20 +41,252 @@
     }
 }
 
+/* Option Button Styles */
 .option-btn {
-    transition: all 0.2s;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.option-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.option-btn:hover::before {
+    left: 100%;
 }
 
 .option-btn:hover {
-    transform: translateX(5px);
+    transform: translateX(8px);
+    box-shadow: 0 8px 30px rgba(137, 44, 220, 0.4);
 }
 
+/* Correct/Incorrect Answer States */
 .correct {
-    background-color: #09ff00 !important;
+    background: linear-gradient(135deg, #10b981, #059669) !important;
     color: white !important;
+    border-color: #10b981 !important;
+    animation: correctPulse 0.5s ease;
 }
 
 .incorrect {
-    background-color: #ff0000 !important;
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
     color: white !important;
+    border-color: #ef4444 !important;
+    animation: incorrectShake 0.5s ease;
+}
+
+@keyframes correctPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes incorrectShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(137, 44, 220, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Glow Text Effect */
+.glow-text {
+    text-shadow:
+        0 0 10px rgba(137, 44, 220, 0.5),
+        0 0 20px rgba(137, 44, 220, 0.3),
+        0 0 30px rgba(137, 44, 220, 0.2);
+}
+
+/* Card Hover Effect Enhancement */
+.category-card-wrapper {
+    transition: transform 0.3s ease;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(137, 44, 220, 0.2);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Gradient Background Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(270deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+/* Floating Animation for Particles */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-20px) translateX(10px);
+    }
+
+    50% {
+        transform: translateY(-10px) translateX(-10px);
+    }
+
+    75% {
+        transform: translateY(-30px) translateX(5px);
+    }
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(137, 44, 220, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(137, 44, 220, 0.8);
+    }
+}
+
+/* Button Glow on Hover */
+button:hover {
+    animation: pulseGlow 1.5s infinite;
+}
+
+/* Glass Morphism Effect */
+.glass-effect {
+    background: rgba(137, 44, 220, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(137, 44, 220, 0.2);
+}
+
+/* Neon Border Animation */
+@keyframes neonBorder {
+
+    0%,
+    100% {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 5px var(--primary-color);
+    }
+
+    50% {
+        border-color: var(--secondary-color);
+        box-shadow: 0 0 20px var(--secondary-color);
+    }
+}
+
+.neon-border {
+    animation: neonBorder 2s infinite;
+}
+
+/* Scale Up on Hover */
+.scale-up {
+    transition: transform 0.3s ease;
+}
+
+.scale-up:hover {
+    transform: scale(1.05);
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shimmer-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .category-card-wrapper {
+        margin-bottom: 1rem;
+    }
 }

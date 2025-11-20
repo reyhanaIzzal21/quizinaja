@@ -4,18 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizinaja</title>
+    <title>Quiz Master - Web3 Quiz Platform</title>
+    <meta name="description" content="Platform quiz interaktif dengan pengalaman futuristik Web3">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#892CDC',
+                        secondary: '#52057B',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Additional inline styles for immediate effect */
+        body {
+            background: #000;
+            color: #f5f5f5;
+        }
+
+        #main-nav {
+            background: rgba(137, 44, 220, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(137, 44, 220, 0.3);
+        }
+
+        /* Loading Animation */
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 1rem;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(137, 44, 220, 0.2);
+            border-top-color: #892CDC;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-text {
+            font-size: 1.25rem;
+            color: #892CDC;
+            font-weight: 600;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50 min-h-screen">
-    <nav id="main-nav" class="bg-indigo-600 text-white shadow-lg"></nav>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav id="main-nav" class="text-white shadow-lg sticky top-0 z-50"></nav>
 
+    <!-- Main Content -->
     <main id="app" class="container mx-auto px-4 py-8">
-        <div class="text-center mt-10">Loading...</div>
+        <!-- Loading State -->
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Quizinaja...</div>
+        </div>
     </main>
 
+    <!-- App Script -->
     <script type="module" src="assets/js/app.js"></script>
 </body>
 
