@@ -10,7 +10,7 @@ export const Navbar = {
                         </h1>
                         <div class="flex gap-4">
                             <button onclick="app.router.navigate('generator')" class="bg-white text-indigo-600 px-4 py-1 rounded-full font-bold hover:bg-indigo-50 transition shadow">
-                                ✨ Buat Quiz AI
+                                ✨ Generate Quiz
                             </button>
                         </div>
                     </div>
