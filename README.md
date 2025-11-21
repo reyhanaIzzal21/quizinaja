@@ -11,7 +11,7 @@
 
 *Built with Vanilla JavaScript — Perfect for education, learning platforms, and interactive assessments*
 
-[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration) • [Team](#-team)
+[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration)
 
 </div>
 
@@ -342,31 +342,6 @@ Display & Download
 ### 🎭 Bahasa Jawa (4 Quizzes)
 - Unggah-Ungguh, Tembang Macapat
 - Aksara Jawa, Paribasan & Bebasan
-
----
-
-## 👥 Team
-
-<table align="center" width="100%">
-<tr align="center" width="100%">
-<td align="center" width="25%">
-<b>Developer Name</b><br />
-<sub>Full Stack Developer</sub><br />
-</td>
-<td align="center" width="25%">
-<b>Developer Name</b><br />
-<sub>Frontend Developer</sub><br />
-</td>
-<td align="center" width="25%">
-<b>Developer Name</b><br />
-<sub>Backend Developer</sub><br />
-</td>
-<td align="center" width="25%">
-<b>Developer Name</b><br />
-<sub>QA Engineer</sub>
-</td>
-</tr>
-</table>
 
 ---
 
