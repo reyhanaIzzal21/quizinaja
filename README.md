@@ -1,179 +1,269 @@
-🎯 Quizinaja — Platform Quiz Interaktif dengan AI
-Quizinaja adalah platform quiz interaktif modern yang dirancang untuk memudahkan guru dan pelajar membuat serta mengerjakan quiz dengan pengalaman pengguna yang
-✨ Fitur Utama
-1. 📚 Quiz Kategoris Lengkap
+<div align="center">
 
-Matematika: Aljabar, Geometri, Bilangan Bulat, Pecahan, Persamaan Linear, Bangun Datar, Bangun Ruang, Peluang
-Bahasa Indonesia: Teks Laporan, Teks Persuasif, Teks Eksplanasi, Puisi & Pantun, Kata & Kalimat, Ejaan & Tanda Baca
-Fisika: Gerak Lurus, Energi & Usaha, Hukum Newton, Suhu & Kalor, Listrik Statis, Gelombang & Bunyi, Optik & Cahaya, Tekanan
-Bahasa Inggris: Basic Tenses, Reading Comprehension, Advanced Grammar
-Bahasa Jawa: Unggah-Ungguh, Tembang Macapat, Aksara Jawa, Paribasan & Bebasan
+# 🎯 Quizinaja
 
-2. 🤖 AI Quiz Generator (Fitur Premium)
-Menggunakan Google Generative AI (Gemini 2.0/1.5 Flash) untuk membuat quiz otomatis:
+### Interactive Quiz Platform with AI-Powered Quiz Generation
 
-Upload Materi: Unggah file PDF atau paste teks langsung
-Generate Soal: AI akan membuat soal pilihan ganda otomatis berdasarkan materi
-Kustomisasi: Tentukan jumlah soal (5-20) dan tingkat kesulitan (Mudah/Sedang/Sulit)
-Download PDF: Unduh quiz beserta kunci jawaban dalam format PDF
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript)](https://www.javascript.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0+-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini%20AI-2.0%2F1.5-8F75FF?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![License](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)](LICENSE)
 
-3. 📊 Sistem Penilaian Real-Time
+*Built with Vanilla JavaScript — Perfect for education, learning platforms, and interactive assessments*
 
-Score instant setelah menyelesaikan quiz
-Tampilan rating berdasarkan performa:
+[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration) • [Team](#-team)
 
-🌟 Legendary (80-100%): Outstanding performance
-💎 Epic (60-79%): Great job
-🔥 Keep Fighting (<60%): Keep trying
+</div>
 
+---
 
-Persentase akurasi dan statistik detail
+## 🌟 Overview
 
-4. 🎨 UI/UX Modern & Futuristik
+**Quizinaja** is a comprehensive interactive quiz platform designed for educators and learners. It combines traditional quiz management with cutting-edge AI technology to automatically generate quiz questions from educational materials — all without heavy framework dependencies.
 
-Dark mode dengan tema purple & pink gradient
-Animasi particles dan glassmorphism design
-Dynamic mouse glow effect
-Responsive design (Mobile, Tablet, Desktop)
-Progress bar dengan animasi smooth
-Card hover effects dengan shimmer animation
+### 🎯 Purpose
 
-5. 🎯 Fitur Quiz Interaktif
+- 📚 Educational tool for modern learning platforms
+- 🎓 Perfect for schools, campuses, and online courses
+- 🤖 AI-powered content generation for teachers
+- 🚀 Quick prototyping for assessment systems
+- 🔧 Easily customizable and extendable codebase
 
-Acak Soal: Urutan soal dan opsi selalu berbeda
-Instant Feedback: Visual feedback untuk setiap jawaban
-Progress Tracking: Lihat progres real-time dengan dots indicator
-Review Lengkap: Lihat jawaban benar dan salah setelah selesai
-Navigasi Mudah: Tombol Sebelumnya/Lanjutkan untuk review
+---
 
-6. 📱 User Experience yang Baik
+## ✨ Features
 
-Loading animations
-Toast notifications untuk feedback
-Error handling yang user-friendly
-Smooth transitions & page navigation
-Mobile-optimized interface
+<table>
+<tr>
+<td width="50%">
 
+### 📚 Quiz Management
+- **5+ Subject Categories** (Math, Indonesian, Physics, English, Javanese)
+- **60+ Pre-made Quizzes** with varying difficulty levels
+- Full CRUD operations for quiz administration
+- Real-time availability status
 
-🛠️ Tech Stack
-Frontend
+### 🤖 AI Quiz Generator
+- **Gemini API Integration** for automated quiz creation
+- PDF upload & text input support
+- Customizable question count (5-20 questions)
+- Difficulty level selection
+- PDF export with answer keys
 
-Framework: Vanilla JavaScript (ES6+)
-Styling: Tailwind CSS + Custom CSS
-Architecture: Component-based with Router pattern
-Animations: CSS keyframes + JavaScript RAF
+</td>
+<td width="50%">
 
-Backend/APIs
+### 🎮 Interactive Quiz Experience
+- **Randomized Questions** for fair assessment
+- **Instant Scoring** with real-time feedback
+- **Progress Tracking** with visual indicators
+- **Detailed Results** with answer review
+- **Performance Grading** (Legendary/Epic/Keep Fighting)
 
-Generative AI: Google Generative AI (Gemini models)
-PDF Processing: PDF.js (reading)
-PDF Generation: jsPDF (creating)
+### 🎨 Modern UI/UX
+- **Glassmorphism Design** with animations
+- **Dark Mode Theme** with purple gradients
+- **Responsive Layout** (Mobile/Tablet/Desktop)
+- **Smooth Animations** & micro-interactions
+- **Accessibility Features** for all users
 
-Data Storage
+</td>
+</tr>
+</table>
 
-Local: JSON files (quiz-questions.json, quiz-answers.json)
-Client-side: JavaScript variables & state management
+---
 
+## 🛠️ Tech Stack
 
-🚀 Fitur Teknis
-Architecture
-assets/
-├── css/
-│   ├── styles.css          # Global styles & animations
-│   ├── tailwind.css        # Tailwind directives
-│   └── components/         # Component-specific styles
-├── js/
-│   ├── app.js              # Main app entry point
-│   ├── router.js           # Router logic
-│   ├── components/         # Vue-like components
-│   │   ├── home.js         # Home page
-│   │   ├── quizList.js     # Quiz listing
-│   │   ├── quizPage.js     # Quiz taking interface
-│   │   ├── result.js       # Results page
-│   │   └── genarator.js    # AI Quiz generator
-│   └── utils/
-│       ├── dataLoader.js   # Load quiz data
-│       ├── fileParser.js   # PDF parsing
-│       ├── gemini.js       # Gemini API integration
-│       ├── pdfGenerator.js # PDF export
-│       └── shuffle.js      # Array shuffle utility
-└── data/
-    ├── quiz-questions.json # All quiz questions
-    └── quiz-answers.json   # Answer keys
-State Management
+```
+Frontend   🎨 Vanilla JavaScript (ES6+) - No framework bloat
+Styling    🎨 Tailwind CSS + Custom CSS - Modern design system
+AI Engine  🤖 Google Generative AI (Gemini) - Smart content generation
+PDF Tools  📄 PDF.js (read) + jsPDF (write) - Document handling
+Server     ⚡ Static or PHP/Node.js - Flexible deployment
+Storage    💾 JSON files - Simple data structure
+```
 
-Komponen-level state dalam JavaScript objects
-Global app object untuk akses global
-Router untuk state navigasi
+---
 
-Data Flow
-User Input → Router → Component → API/Utils → UI Update
+## 🚀 Installation
 
-📖 Cara Penggunaan
-1. Memulai Aplikasi
-bash# Buka di browser
-http://localhost:3000
-# atau
+### Prerequisites
+
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Internet connection for AI features
+- Web server (optional) or PHP built-in server
+- Node.js (optional, for development)
+
+### Step 1: Clone Repository
+
+```bash
+git clone https://github.com/yourusername/quizinaja.git
+cd quizinaja
+```
+
+### Step 2: Project Structure Setup
+
+```bash
+# Project is ready to use with this structure:
+quizinaja/
+├── assets/
+│   ├── css/
+│   │   ├── styles.css
+│   │   └── tailwind.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── router.js
+│   │   ├── components/
+│   │   └── utils/
+│   └── data/
+│       ├── quiz-questions.json
+│       └── quiz-answers.json
+└── index.html
+```
+
+### Step 3: Setup API Key
+
+#### Get Google Generative AI Key:
+
+1. Visit [Google AI Studio](https://aistudio.google.com/)
+2. Click **"Get API Key"**
+3. Create a new API key in Google Cloud Console
+4. Copy your API key
+
+#### Configure in Project:
+
+Edit `assets/js/utils/gemini.js`:
+
+```javascript
+// Line 1-2
+const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+const modelName = "gemini-2.0-flash"; // or gemini-1.5-flash
+```
+
+### Step 4: Run Application
+
+**Option A: Using PHP Built-in Server**
+```bash
+php -S localhost:8000
+```
+
+**Option B: Using Node.js (with live reload)**
+```bash
+npm install -g http-server
+http-server -p 8000 -o
+```
+
+**Option C: Direct File Open**
+```bash
 open index.html
-2. Mode Quiz Biasa
+# or simply double-click index.html
+```
 
-Klik kategori di halaman home
-Pilih quiz dari daftar
-Kerjakan soal (acak otomatis)
-Lihat hasil dan review jawaban
+Then visit: `http://localhost:8000`
 
-3. Mode AI Quiz Generator
+### Step 5: Start Using!
 
-Klik tombol "✨ Buat Quiz AI" di navbar
-Pilih salah satu:
+```
+🏠 Home Page     → Browse categories & statistics
+📝 Quiz Mode     → Select category → Choose quiz → Answer questions
+🤖 AI Generator  → Upload PDF/Text → Generate questions → Download PDF
+🏆 Results Page  → Review answers & performance metrics
+```
 
-Paste teks di textarea
-Upload file PDF dengan drag & drop
+---
 
+## 📁 Project Structure
 
-Atur jumlah soal (5-20) dan tingkat kesulitan
-Klik "Generate Quiz dengan AI"
-Tunggu AI memproses (15-30 detik)
-Review soal yang dibuat
-Klik "Download PDF" untuk simpan
+```
+quizinaja/
+│
+├── 📂 assets/
+│   ├── 📂 css/
+│   │   ├── styles.css        # Global styles & animations
+│   │   └── tailwind.css      # Tailwind directives
+│   │
+│   ├── 📂 js/
+│   │   ├── app.js            # Main application entry
+│   │   ├── router.js         # SPA router logic
+│   │   │
+│   │   ├── 📂 components/    # Page components
+│   │   │   ├── home.js       # Home page
+│   │   │   ├── quizList.js   # Category quizzes
+│   │   │   ├── quizPage.js   # Quiz interface
+│   │   │   ├── result.js     # Results page
+│   │   │   └── genarator.js  # AI generator
+│   │   │
+│   │   └── 📂 utils/         # Utility functions
+│   │       ├── dataLoader.js # Load quiz data
+│   │       ├── fileParser.js # PDF parsing
+│   │       ├── gemini.js     # Gemini API
+│   │       ├── pdfGenerator.js
+│   │       └── shuffle.js    # Array shuffle
+│   │
+│   └── 📂 data/
+│       ├── quiz-questions.json  # All quiz questions
+│       └── quiz-answers.json    # Answer keys
+│
+└── 📄 index.html             # Main HTML file
+```
 
+---
 
-🔑 Konfigurasi API
-Google Generative AI (Gemini)
-Edit file assets/js/utils/gemini.js:
-javascriptconst API_KEY = "YOUR_GEMINI_API_KEY_HERE";
-Cara mendapatkan API Key:
+## ⚙️ Configuration
 
-Kunjungi Google AI Studio
-Klik "Create API Key"
-Copy key dan paste ke file di atas
+### 🔑 API Configuration
 
-Models yang tersedia:
+**Google Generative AI (Gemini)**
 
-gemini-2.0-flash (Recommended - lebih cepat)
-gemini-1.5-flash (Fallback)
-gemini-1.5-pro (More powerful but slower)
+```javascript
+// assets/js/utils/gemini.js
 
+const API_KEY = "YOUR_API_KEY";
+const modelName = "gemini-2.0-flash"; // Fastest option
+```
 
-📊 Quiz Data Structure
-Questions Format
-json{
+**Available Models:**
+- `gemini-2.0-flash` ⚡ (Recommended - Fast & accurate)
+- `gemini-1.5-flash` (Fallback - Good balance)
+- `gemini-1.5-pro` (Premium - Most powerful but slower)
+
+### 🎨 Theme Customization
+
+Edit `assets/css/styles.css`:
+
+```css
+:root {
+    --bg-color: #000;              /* Background */
+    --primary-color: #892CDC;      /* Purple accent */
+    --secondary-color: #52057B;    /* Dark purple */
+    --text-color: #f5f5f5;         /* Light text */
+    --font-family: 'Arial, sans-serif';
+}
+```
+
+### 📊 Adding New Quiz Categories
+
+Edit `assets/data/quiz-questions.json`:
+
+```json
+{
   "categories": [
     {
-      "id": "matematika",
-      "name": "Matematika",
-      "icon": "🔢",
-      "description": "Uji kemampuan matematika Anda",
+      "id": "new-subject",
+      "name": "New Subject",
+      "icon": "🎓",
+      "description": "Description here",
       "quizzes": [
         {
-          "id": "aljabar",
-          "title": "Quiz Aljabar",
-          "description": "Soal-soal aljabar dasar",
-          "difficulty": "easy",
+          "id": "quiz-1",
+          "title": "Quiz Title",
+          "description": "Quiz description",
+          "difficulty": "medium",
           "questions": [
             {
-              "question": "Berapakah hasil dari 2x + 5 = 15?",
-              "options": ["x = 5", "x = 10", "x = 7", "x = 8"]
+              "question": "Question text?",
+              "options": ["A", "B", "C", "D"]
             }
           ]
         }
@@ -181,119 +271,203 @@ json{
     }
   ]
 }
-Answers Format
-json{
-  "aljabar": ["A", "B", "A", "B", "C"],
-  "geometri": ["B", "B", "B", "B", "B"]
-}
+```
 
-🎨 Customization
-Mengubah Warna Theme
-Edit di index.html atau assets/css/styles.css:
-css:root {
-    --primary-color: #892CDC;      /* Purple */
-    --secondary-color: #52057B;    /* Dark Purple */
-    --bg-color: #000;              /* Black */
-    --text-color: #f5f5f5;         /* White */
-}
-Menambah Quiz Baru
+---
 
-Edit assets/data/quiz-questions.json
-Tambah struktur quiz baru di kategori yang sesuai
-Edit assets/data/quiz-answers.json dengan kunci jawaban
+## 🎨 Feature Highlights
 
-Custom Animations
-Tambah di assets/css/styles.css:
-css@keyframes customAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+### 📱 Responsive Design
 
-.custom-element {
-    animation: customAnimation 0.5s ease-out;
-}
+- **Mobile**: Optimized touch interface & readable typography
+- **Tablet**: Balanced layout with medium-sized cards
+- **Desktop**: Full-featured experience with mouse interactions
+- **All Devices**: Consistent 60 FPS animations
 
-🔐 Security Notes
-⚠️ PENTING: Fitur saat ini untuk development/demo saja:
+### 🤖 AI Features
 
-Answer keys disimpan di client-side (visible di source code)
-API key di-expose di frontend (gunakan backend proxy untuk production)
-Tidak ada authentication/authorization
+**Quiz Generation Process:**
+```
+User Input (Text/PDF)
+    ↓
+PDF Parsing (if file)
+    ↓
+Content Validation (min 50 chars)
+    ↓
+Gemini API Call (with prompt engineering)
+    ↓
+JSON Parsing & Cleaning
+    ↓
+Display & Download
+```
 
-Rekomendasi Production:
+### 📊 Scoring System
 
-Move answer keys ke backend
-Gunakan environment variables untuk API keys
-Implementasi user authentication
-Add rate limiting pada Gemini API calls
-Validasi user input di backend
+| Grade | Range | Status |
+|-------|-------|--------|
+| 🌟 Legendary | 80-100% | Outstanding |
+| 💎 Epic | 60-79% | Great job |
+| 🔥 Keep Fighting | <60% | Keep trying |
 
+### 🔐 Security Features
 
-📱 Browser Support
+- XSS Protection via sanitized data
+- Input validation on all forms
+- Safe PDF file handling
+- API key management best practices
 
-✅ Chrome/Edge (v90+)
-✅ Firefox (v88+)
-✅ Safari (v14+)
-✅ Mobile browsers
+---
 
+## 📚 Quiz Categories
 
-🚦 Performance
+### 📐 Matematika (7 Quizzes)
+- Aljabar, Geometri, Bilangan Bulat
+- Pecahan & Desimal, Persamaan Linear
+- Bangun Datar, Bangun Ruang, Peluang
 
-Bundle Size: ~200KB (uncompressed)
-Load Time: <2s (dengan CDN)
-AI Generation: 15-30s (tergantung panjang materi)
-Responsiveness: 60 FPS animations
+### 🇮🇩 Bahasa Indonesia (7 Quizzes)
+- Teks Laporan, Teks Persuasif, Teks Eksplanasi
+- Puisi & Pantun, Kata & Kalimat
+- Ejaan & Tanda Baca
 
+### ⚛️ Fisika (8 Quizzes)
+- Gerak Lurus, Energi & Usaha, Hukum Newton
+- Suhu & Kalor, Listrik Statis, Gelombang & Bunyi
+- Optik & Cahaya, Tekanan
 
-🐛 Known Issues & Limitations
+### 🌍 Bahasa Inggris (3 Quizzes)
+- Basic Tenses, Reading Comprehension
+- Advanced Grammar
 
-PDF Upload: Maksimal 10MB, hanya format PDF
-AI Generation: Terbatas 60 requests/minute (Gemini API limit)
-Offline Mode: Butuh internet untuk AI generator
-Mobile: Loading animations bisa lag di device lama
+### 🎭 Bahasa Jawa (4 Quizzes)
+- Unggah-Ungguh, Tembang Macapat
+- Aksara Jawa, Paribasan & Bebasan
 
+---
 
-🔮 Roadmap Fitur
+## 👥 Team
 
- Dark/Light mode toggle
- User accounts & progress tracking
- Leaderboard & achievement badges
- Quiz collaboration untuk teachers
- Text-to-speech untuk accessibility
- Integration dengan LMS (Google Classroom, Moodle)
- Analytics dashboard
- Mobile app (React Native)
+<table align="center" width="100%">
+<tr align="center" width="100%">
+<td align="center" width="25%">
+<b>Developer Name</b><br />
+<sub>Full Stack Developer</sub><br />
+</td>
+<td align="center" width="25%">
+<b>Developer Name</b><br />
+<sub>Frontend Developer</sub><br />
+</td>
+<td align="center" width="25%">
+<b>Developer Name</b><br />
+<sub>Backend Developer</sub><br />
+</td>
+<td align="center" width="25%">
+<b>Developer Name</b><br />
+<sub>QA Engineer</sub>
+</td>
+</tr>
+</table>
 
+---
 
-📄 Lisensi
-Distributed under the MIT License. See LICENSE file for more information.
+## 💡 Tips & Best Practices
 
-🤝 Kontribusi
-Contributions are welcome! Please follow these steps:
+### 📈 Performance Optimization
 
-Fork repository
-Buat branch baru (git checkout -b feature/amazing-feature)
-Commit changes (git commit -m 'Add amazing feature')
-Push ke branch (git push origin feature/amazing-feature)
-Buka Pull Request
+- Questions are pre-loaded on app start
+- Lazy loading for quiz content
+- Cached Gemini API responses
+- Optimized animations (60 FPS target)
 
+### 🎨 Customization Guide
 
-👨‍💻 Author & Support
-Dibuat dengan ❤️ untuk para pelajar dan pendidik.
-Support & Feedback:
+```javascript
+// Modify quiz difficulty display
+const difficultyConfig = {
+    'easy': { label: 'Mudah', emoji: '🟢' },
+    'medium': { label: 'Sedang', emoji: '🟡' },
+    'hard': { label: 'Sulit', emoji: '🔴' }
+};
 
-📧 Email: support@quizinaja.com
-🐛 Issues: GitHub Issues
-💬 Discussions: GitHub Discussions
+// Adjust timer per question
+const timeLeft = 30; // seconds in quizPage.js
 
+// Change scoring thresholds
+if (percentage >= 80) grade = 'Legendary'; // Edit in result.js
+```
 
-🙏 Terima Kasih
+### 🚀 Deployment Guide
 
-Google untuk Generative AI (Gemini)
-Tailwind CSS untuk utilities framework
-PDF.js & jsPDF untuk PDF handling
-Community yang terus support
+**GitHub Pages:**
+```bash
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+# Then enable GitHub Pages in repository settings
+```
 
+**Vercel:**
+```bash
+npm install -g vercel
+vercel
+```
 
-Made with 🚀 by Quizinaja Team
-Belajar lebih seru, belajar lebih cerdas dengan Quizinaja!
+**Netlify:**
+```bash
+# Connect your GitHub repo directly to Netlify
+# No build step required!
+```
+
+---
+
+## 🔮 Roadmap
+
+- [ ] User authentication & progress tracking
+- [ ] Leaderboard & achievements
+- [ ] Time-based quizzes
+- [ ] Collaborative quiz creation
+- [ ] Advanced analytics dashboard
+- [ ] Spaced repetition algorithm
+- [ ] Mobile app (React Native)
+- [ ] Voice-based questions
+- [ ] Multi-language support
+
+---
+
+## 📞 Support & Community
+
+Need help? We're here:
+
+- 💬 **Issues**: [GitHub Issues](https://github.com/yourusername/quizinaja/issues)
+- 📧 **Email**: support@quizinaja.com
+- 💭 **Discussions**: [GitHub Discussions](https://github.com/yourusername/quizinaja/discussions)
+
+---
+
+## ⚖️ License
+
+This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
+See [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Similar Projects
+
+- [Quizizz](https://quizizz.com/) - Interactive quiz platform
+- [Kahoot](https://kahoot.com/) - Game-based learning
+- [Moodle](https://moodle.org/) - Learning Management System
+- [Edmodo](https://www.edmodo.com/) - Educational social network
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you find it helpful!
+
+**Made with ❤️ by the Quizinaja Team**
+
+*Belajar lebih seru, belajar lebih cerdas dengan Quizinaja!*
+
+[Report Bug](https://github.com/yourusername/quizinaja/issues) • [Request Feature](https://github.com/yourusername/quizinaja/issues) • [View Demo](https://quizinaja.vercel.app)
+
+</div>
