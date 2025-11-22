@@ -149,15 +149,6 @@ export const QuizList = {
                             </div>
                         </div>
 
-                        <!-- Time -->
-                        <div class="flex items-center gap-3 px-6 py-3 rounded-full"
-                             style="background: rgba(137, 44, 220, 0.15); border: 1px solid rgba(137, 44, 220, 0.3);">
-                            <span class="text-2xl">⏱️</span>
-                            <div class="text-left">
-                                <div class="text-xl font-bold" style="color: #f5f5f5;">10-30 min</div>
-                                <div class="text-xs" style="color: rgba(245, 245, 245, 0.6);">Durasi</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
