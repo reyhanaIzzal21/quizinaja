@@ -1,5 +1,5 @@
 // Masukkan API KEY Google AI Studio Anda di sini
-const API_KEY = "AIzaSyARYJ81kD4sivP2jpVGbNzsmCqjrEor5C0"; 
+const API_KEY = "AIzaSyAErcLpxDhmMbRl6rTke8tu6nqdIj53WFU"; 
 
 export async function generateQuizFromAI(text, numQuestions) {
     // Gunakan model yang BENAR-BENAR tersedia: gemini-2.0-flash atau gemini-1.5-flash
