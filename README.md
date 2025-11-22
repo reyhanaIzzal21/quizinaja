@@ -123,6 +123,7 @@ quizinaja/
 ```
 
 ### Step 3: Setup API Key
+> ⚠️ **Note:** The API Key may be locked or disabled if a leak is detected due to it being stored on the frontend.
 
 #### Get Google Generative AI Key:
 
