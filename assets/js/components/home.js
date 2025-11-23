@@ -193,8 +193,86 @@ export const Home = {
                 </div>
             </div>
 
+            <!-- Categories Section -->
+            <div id="categories-section" class="relative z-10 py-24">
+                <div class="max-w-7xl mx-auto px-4">
+                    
+                    <!-- Section Header -->
+                    <div class="text-center mb-20">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
+                             style="background: rgba(137, 44, 220, 0.1); border: 1px solid rgba(137, 44, 220, 0.3); backdrop-filter: blur(10px);">
+                            <span class="text-sm font-medium" style="color: rgba(245, 245, 245, 0.8);">Jelajahi Materi</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #f5f5f5;">
+                            Pilih Kategori Favorit Kamu
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-auto" style="color: rgba(245, 245, 245, 0.6);">
+                            Dari sains hingga seni, temukan beragam topik yang siap menguji pengetahuanmu
+                        </p>
+                    </div>
+
+                    <!-- Categories Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                        ${categories.map((category, index) => {
+            const gradients = [
+                'from-purple-600 to-pink-600',
+                'from-blue-600 to-purple-600',
+                'from-pink-600 to-purple-600',
+                'from-purple-600 to-indigo-600',
+                'from-orange-500 to-pink-600',
+                'from-green-500 to-blue-600'
+            ];
+            const gradient = gradients[index % gradients.length];
+
+            return `
+                                <div class="category-card-wrapper relative group cursor-pointer" 
+                                     onclick="app.router.navigate('quizList', {categoryId: '${category.id}'})"
+                                     style="animation: fadeInUp 0.6s ease ${index * 0.1}s backwards;">
+                                    
+                                    <div class="absolute -inset-1 bg-gradient-to-r ${gradient} rounded-3xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500"></div>
+                                    
+                                    <div class="relative h-full p-8 rounded-3xl transition-all duration-300 group-hover:scale-[1.02] group-hover:translate-y-[-8px] overflow-hidden"
+                                         style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.2); backdrop-filter: blur(10px);">
+                                        
+                                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                        
+                                        <div class="relative mb-6 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-r ${gradient} p-0.5">
+                                            <div class="w-full h-full rounded-2xl flex items-center justify-center" style="background: rgba(0, 0, 0, 0.8);">
+                                                <span class="text-4xl">${category.icon}</span>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="text-2xl font-bold mb-3" style="color: #f5f5f5;">
+                                            ${category.name}
+                                        </h3>
+                                        
+                                        <p class="text-sm mb-6 leading-relaxed" style="color: rgba(245, 245, 245, 0.6);">
+                                            ${category.description}
+                                        </p>
+
+                                        <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                                            <div class="flex items-center gap-2">
+                                                <div class="w-2 h-2 rounded-full" style="background: #892CDC;"></div>
+                                                <span class="text-sm font-medium" style="color: rgba(245, 245, 245, 0.5);">
+                                                    ${category.quizzes.length} Quiz Available
+                                                </span>
+                                            </div>
+                                            <div class="flex items-center gap-2 font-bold transition-all group-hover:gap-3" 
+                                                 style="color: #892CDC;">
+                                                <span class="text-sm">Explore</span>
+                                                <span class="text-xl">→</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+        }).join('')}
+                    </div>
+                </div>
+            </div>
+
             <!-- Features Section -->
-            <div id="features-section" class="relative z-10 py-24">
+            <div id="features-section" class="relative z-10 py-16">
                 <div class="max-w-7xl mx-auto px-4">
                     
                     <!-- Section Header -->
@@ -254,7 +332,7 @@ export const Home = {
                             <div class="feature-card relative group cursor-pointer" style="animation: fadeInUp 0.6s ease ${idx * 0.1}s backwards;">
                                 <div class="absolute -inset-1 bg-gradient-to-r ${feature.gradient} rounded-3xl blur-lg opacity-0 group-hover:opacity-30 transition-all duration-500"></div>
                                 <div class="relative h-full p-8 rounded-3xl transition-all duration-300 group-hover:translate-y-[-8px]"
-                                     style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.2); backdrop-filter: blur(10px);">
+                                    style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.2); backdrop-filter: blur(10px);">
                                     
                                     <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-gradient-to-r ${feature.gradient} p-0.5">
                                         <div class="w-full h-full rounded-2xl flex items-center justify-center text-3xl" style="background: rgba(0, 0, 0, 0.8);">
@@ -272,84 +350,6 @@ export const Home = {
                                 </div>
                             </div>
                         `).join('')}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Categories Section -->
-            <div id="categories-section" class="relative z-10 py-24">
-                <div class="max-w-7xl mx-auto px-4">
-                    
-                    <!-- Section Header -->
-                    <div class="text-center mb-20">
-                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-                             style="background: rgba(137, 44, 220, 0.1); border: 1px solid rgba(137, 44, 220, 0.3); backdrop-filter: blur(10px);">
-                            <span class="text-sm font-medium" style="color: rgba(245, 245, 245, 0.8);">Jelajahi Materi</span>
-                        </div>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #f5f5f5;">
-                            Pilih Kategori Favorit Kamu
-                        </h2>
-                        <p class="text-lg max-w-2xl mx-auto" style="color: rgba(245, 245, 245, 0.6);">
-                            Dari sains hingga seni, temukan beragam topik yang siap menguji pengetahuanmu
-                        </p>
-                    </div>
-
-                    <!-- Categories Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                        ${categories.map((category, index) => {
-                const gradients = [
-                    'from-purple-600 to-pink-600',
-                    'from-blue-600 to-purple-600',
-                    'from-pink-600 to-purple-600',
-                    'from-purple-600 to-indigo-600',
-                    'from-orange-500 to-pink-600',
-                    'from-green-500 to-blue-600'
-                ];
-                const gradient = gradients[index % gradients.length];
-
-                return `
-                                <div class="category-card-wrapper relative group cursor-pointer" 
-                                     onclick="app.router.navigate('quizList', {categoryId: '${category.id}'})"
-                                     style="animation: fadeInUp 0.6s ease ${index * 0.1}s backwards;">
-                                    
-                                    <div class="absolute -inset-1 bg-gradient-to-r ${gradient} rounded-3xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500"></div>
-                                    
-                                    <div class="relative h-full p-8 rounded-3xl transition-all duration-300 group-hover:scale-[1.02] group-hover:translate-y-[-8px] overflow-hidden"
-                                         style="background: rgba(137, 44, 220, 0.05); border: 1px solid rgba(137, 44, 220, 0.2); backdrop-filter: blur(10px);">
-                                        
-                                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                                        
-                                        <div class="relative mb-6 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-r ${gradient} p-0.5">
-                                            <div class="w-full h-full rounded-2xl flex items-center justify-center" style="background: rgba(0, 0, 0, 0.8);">
-                                                <span class="text-4xl">${category.icon}</span>
-                                            </div>
-                                        </div>
-
-                                        <h3 class="text-2xl font-bold mb-3" style="color: #f5f5f5;">
-                                            ${category.name}
-                                        </h3>
-                                        
-                                        <p class="text-sm mb-6 leading-relaxed" style="color: rgba(245, 245, 245, 0.6);">
-                                            ${category.description}
-                                        </p>
-
-                                        <div class="flex items-center justify-between pt-4 border-t border-white/10">
-                                            <div class="flex items-center gap-2">
-                                                <div class="w-2 h-2 rounded-full" style="background: #892CDC;"></div>
-                                                <span class="text-sm font-medium" style="color: rgba(245, 245, 245, 0.5);">
-                                                    ${category.quizzes.length} Quiz Available
-                                                </span>
-                                            </div>
-                                            <div class="flex items-center gap-2 font-bold transition-all group-hover:gap-3" 
-                                                 style="color: #892CDC;">
-                                                <span class="text-sm">Explore</span>
-                                                <span class="text-xl">→</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `;
-            }).join('')}
                     </div>
                 </div>
             </div>
