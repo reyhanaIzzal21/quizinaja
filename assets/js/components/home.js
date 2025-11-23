@@ -38,7 +38,7 @@ export const Home = {
                 <!-- Dynamic Mouse Glow -->
                 <div id="mouse-glow" class="absolute w-[500px] h-[500px] rounded-full transition-all duration-500 ease-out pointer-events-none"
                      style="
-                        background: radial-gradient(circle, rgba(137, 44, 220, 0.2) 0%, rgba(82, 5, 123, 0.1) 40%, transparent 70%);
+                        background: radial-gradient(circle, rgba(214, 44, 220, 0.7) 0%, rgba(109, 5, 123, 0.36) 40%, transparent 70%);
                         filter: blur(80px);
                         transform: translate(-50%, -50%);
                         mix-blend-mode: screen;
@@ -77,8 +77,8 @@ export const Home = {
                 <div class="absolute inset-0 opacity-[0.03]"
                      style="
                         background-image: 
-                            linear-gradient(rgba(137, 44, 220, 0.5) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(137, 44, 220, 0.5) 1px, transparent 1px);
+                            linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
                         background-size: 60px 60px;
                         animation: gridMove 20s linear infinite;
                      "></div>
@@ -86,7 +86,7 @@ export const Home = {
                 <!-- Radial Light -->
                 <div class="absolute inset-0" 
                      style="
-                        background: radial-gradient(circle at 50% 0%, rgba(137, 44, 220, 0.1) 0%, transparent 50%);
+                        background: radial-gradient(circle at 50% 0%, rgba(135, 0, 253, 0.1) 0%, transparent 50%);
                      "></div>
             </div>
 
