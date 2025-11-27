@@ -53,7 +53,7 @@ export const QuizList = {
                 <!-- Dynamic Mouse Glow -->
                 <div id="mouse-glow-quiz" class="absolute w-96 h-96 rounded-full transition-all duration-300 ease-out pointer-events-none"
                      style="
-                        background: radial-gradient(circle, rgba(137, 44, 220, 0.15) 0%, transparent 70%);
+                        background: radial-gradient(circle, rgba(214, 44, 220, 0.7) 0%, transparent 70%);
                         filter: blur(60px);
                         transform: translate(-50%, -50%);
                      "></div>
@@ -82,8 +82,8 @@ export const QuizList = {
                 <div class="absolute inset-0 opacity-5"
                      style="
                         background-image: 
-                            linear-gradient(rgba(137, 44, 220, 0.3) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(137, 44, 220, 0.3) 1px, transparent 1px);
+                            linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
                         background-size: 50px 50px;
                      "></div>
             </div>

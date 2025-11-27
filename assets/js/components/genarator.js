@@ -8,7 +8,7 @@ export const Generator = {
 
     render: function (container) {
         // Generate floating particles
-        const particles = Array.from({ length: 30 }, (_, i) => {
+        const particles = Array.from({ length: 100 }, (_, i) => {
             const delay = Math.random() * 5;
             const duration = 4 + Math.random() * 4;
             const left = Math.random() * 100;
@@ -60,8 +60,8 @@ export const Generator = {
                 <div class="absolute inset-0 opacity-5"
                      style="
                         background-image: 
-                            linear-gradient(rgba(137, 44, 220, 0.3) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(137, 44, 220, 0.3) 1px, transparent 1px);
+                            linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
                         background-size: 50px 50px;
                      "></div>
             </div>
